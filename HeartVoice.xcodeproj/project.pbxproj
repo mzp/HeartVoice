@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A7471FF3885500470CD7 /* AppDelegate.swift */; };
 		1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A7491FF3885500470CD7 /* ViewController.swift */; };
-		1332A74D1FF3885500470CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332A74B1FF3885500470CD7 /* Main.storyboard */; };
 		1332A74F1FF3885500470CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1332A74E1FF3885500470CD7 /* Assets.xcassets */; };
-		1332A7521FF3885500470CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332A7501FF3885500470CD7 /* LaunchScreen.storyboard */; };
 		1332A75D1FF3885500470CD7 /* HeartVoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */; };
+		1332A76C1FF3897D00470CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332A76A1FF3897D00470CD7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,12 @@
 		1332A7441FF3885500470CD7 /* HeartVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1332A7471FF3885500470CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1332A7491FF3885500470CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1332A74C1FF3885500470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1332A74E1FF3885500470CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1332A7511FF3885500470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1332A7531FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceTests.swift; sourceTree = "<group>"; };
 		1332A75E1FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1332A76B1FF3897D00470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +57,9 @@
 		1332A73B1FF3885500470CD7 = {
 			isa = PBXGroup;
 			children = (
-				1332A7461FF3885500470CD7 /* HeartVoice */,
-				1332A75B1FF3885500470CD7 /* HeartVoiceTests */,
+				1332A7671FF3886A00470CD7 /* Resources */,
+				1332A7461FF3885500470CD7 /* Sources */,
+				1332A75B1FF3885500470CD7 /* Tests */,
 				1332A7451FF3885500470CD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,26 +73,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1332A7461FF3885500470CD7 /* HeartVoice */ = {
+		1332A7461FF3885500470CD7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1332A7471FF3885500470CD7 /* AppDelegate.swift */,
-				1332A7491FF3885500470CD7 /* ViewController.swift */,
-				1332A74B1FF3885500470CD7 /* Main.storyboard */,
-				1332A74E1FF3885500470CD7 /* Assets.xcassets */,
-				1332A7501FF3885500470CD7 /* LaunchScreen.storyboard */,
-				1332A7531FF3885500470CD7 /* Info.plist */,
+				1332A7691FF388A300470CD7 /* iOS */,
 			);
-			path = HeartVoice;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		1332A75B1FF3885500470CD7 /* HeartVoiceTests */ = {
+		1332A75B1FF3885500470CD7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */,
 				1332A75E1FF3885500470CD7 /* Info.plist */,
 			);
-			path = HeartVoiceTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1332A7671FF3886A00470CD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1332A7681FF3888600470CD7 /* iOS */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1332A7681FF3888600470CD7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1332A76A1FF3897D00470CD7 /* LaunchScreen.storyboard */,
+				1332A74E1FF3885500470CD7 /* Assets.xcassets */,
+				1332A7531FF3885500470CD7 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1332A7691FF388A300470CD7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1332A7471FF3885500470CD7 /* AppDelegate.swift */,
+				1332A7491FF3885500470CD7 /* ViewController.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1332A7521FF3885500470CD7 /* LaunchScreen.storyboard in Resources */,
 				1332A74F1FF3885500470CD7 /* Assets.xcassets in Resources */,
-				1332A74D1FF3885500470CD7 /* Main.storyboard in Resources */,
+				1332A76C1FF3897D00470CD7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,18 +243,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1332A74B1FF3885500470CD7 /* Main.storyboard */ = {
+		1332A76A1FF3897D00470CD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1332A74C1FF3885500470CD7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1332A7501FF3885500470CD7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1332A7511FF3885500470CD7 /* Base */,
+				1332A76B1FF3897D00470CD7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -354,7 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HeartVoice/Info.plist;
+				INFOPLIST_FILE = Resources/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HeartVoice/Info.plist;
+				INFOPLIST_FILE = Resources/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
