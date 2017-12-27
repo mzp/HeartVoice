@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A7471FF3885500470CD7 /* AppDelegate.swift */; };
+		1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A7491FF3885500470CD7 /* ViewController.swift */; };
+		1332A74D1FF3885500470CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332A74B1FF3885500470CD7 /* Main.storyboard */; };
+		1332A74F1FF3885500470CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1332A74E1FF3885500470CD7 /* Assets.xcassets */; };
+		1332A7521FF3885500470CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332A7501FF3885500470CD7 /* LaunchScreen.storyboard */; };
+		1332A75D1FF3885500470CD7 /* HeartVoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1332A7591FF3885500470CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1332A73C1FF3885500470CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1332A7431FF3885500470CD7;
+			remoteInfo = HeartVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1332A7441FF3885500470CD7 /* HeartVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1332A7471FF3885500470CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1332A7491FF3885500470CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1332A74C1FF3885500470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1332A74E1FF3885500470CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1332A7511FF3885500470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1332A7531FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceTests.swift; sourceTree = "<group>"; };
+		1332A75E1FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1332A7411FF3885500470CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1332A7551FF3885500470CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1332A73B1FF3885500470CD7 = {
+			isa = PBXGroup;
+			children = (
+				1332A7461FF3885500470CD7 /* HeartVoice */,
+				1332A75B1FF3885500470CD7 /* HeartVoiceTests */,
+				1332A7451FF3885500470CD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1332A7451FF3885500470CD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1332A7441FF3885500470CD7 /* HeartVoice.app */,
+				1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1332A7461FF3885500470CD7 /* HeartVoice */ = {
+			isa = PBXGroup;
+			children = (
+				1332A7471FF3885500470CD7 /* AppDelegate.swift */,
+				1332A7491FF3885500470CD7 /* ViewController.swift */,
+				1332A74B1FF3885500470CD7 /* Main.storyboard */,
+				1332A74E1FF3885500470CD7 /* Assets.xcassets */,
+				1332A7501FF3885500470CD7 /* LaunchScreen.storyboard */,
+				1332A7531FF3885500470CD7 /* Info.plist */,
+			);
+			path = HeartVoice;
+			sourceTree = "<group>";
+		};
+		1332A75B1FF3885500470CD7 /* HeartVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */,
+				1332A75E1FF3885500470CD7 /* Info.plist */,
+			);
+			path = HeartVoiceTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1332A7431FF3885500470CD7 /* HeartVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1332A7611FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoice" */;
+			buildPhases = (
+				1332A7401FF3885500470CD7 /* Sources */,
+				1332A7411FF3885500470CD7 /* Frameworks */,
+				1332A7421FF3885500470CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartVoice;
+			productName = HeartVoice;
+			productReference = 1332A7441FF3885500470CD7 /* HeartVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1332A7571FF3885500470CD7 /* HeartVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1332A7641FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoiceTests" */;
+			buildPhases = (
+				1332A7541FF3885500470CD7 /* Sources */,
+				1332A7551FF3885500470CD7 /* Frameworks */,
+				1332A7561FF3885500470CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1332A75A1FF3885500470CD7 /* PBXTargetDependency */,
+			);
+			name = HeartVoiceTests;
+			productName = HeartVoiceTests;
+			productReference = 1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1332A73C1FF3885500470CD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = mzp;
+				TargetAttributes = {
+					1332A7431FF3885500470CD7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1332A7571FF3885500470CD7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1332A7431FF3885500470CD7;
+					};
+				};
+			};
+			buildConfigurationList = 1332A73F1FF3885500470CD7 /* Build configuration list for PBXProject "HeartVoice" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1332A73B1FF3885500470CD7;
+			productRefGroup = 1332A7451FF3885500470CD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1332A7431FF3885500470CD7 /* HeartVoice */,
+				1332A7571FF3885500470CD7 /* HeartVoiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1332A7421FF3885500470CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1332A7521FF3885500470CD7 /* LaunchScreen.storyboard in Resources */,
+				1332A74F1FF3885500470CD7 /* Assets.xcassets in Resources */,
+				1332A74D1FF3885500470CD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1332A7561FF3885500470CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1332A7401FF3885500470CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */,
+				1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1332A7541FF3885500470CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1332A75D1FF3885500470CD7 /* HeartVoiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1332A75A1FF3885500470CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1332A7431FF3885500470CD7 /* HeartVoice */;
+			targetProxy = 1332A7591FF3885500470CD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1332A74B1FF3885500470CD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1332A74C1FF3885500470CD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1332A7501FF3885500470CD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1332A7511FF3885500470CD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1332A75F1FF3885500470CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1332A7601FF3885500470CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1332A7621FF3885500470CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartVoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1332A7631FF3885500470CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartVoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1332A7651FF3885500470CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartVoiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartVoice.app/HeartVoice";
+			};
+			name = Debug;
+		};
+		1332A7661FF3885500470CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartVoiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartVoice.app/HeartVoice";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1332A73F1FF3885500470CD7 /* Build configuration list for PBXProject "HeartVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1332A75F1FF3885500470CD7 /* Debug */,
+				1332A7601FF3885500470CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1332A7611FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1332A7621FF3885500470CD7 /* Debug */,
+				1332A7631FF3885500470CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1332A7641FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1332A7651FF3885500470CD7 /* Debug */,
+				1332A7661FF3885500470CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1332A73C1FF3885500470CD7 /* Project object */;
+}
