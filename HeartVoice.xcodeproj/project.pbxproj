@@ -20,6 +20,11 @@
 		13810D9F1FF38DB700EB1119 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810D9E1FF38DB700EB1119 /* NotificationController.swift */; };
 		13810DA11FF38DB700EB1119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13810DA01FF38DB700EB1119 /* Assets.xcassets */; };
 		13810DA61FF38DB700EB1119 /* HeartVoiceWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */; };
+		13810DDA1FF38F2700EB1119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810DD91FF38F2700EB1119 /* AppDelegate.swift */; };
+		13810DDC1FF38F2700EB1119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810DDB1FF38F2700EB1119 /* ViewController.swift */; };
+		13810DDE1FF38F2700EB1119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13810DDD1FF38F2700EB1119 /* Assets.xcassets */; };
+		13810DE11FF38F2700EB1119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13810DDF1FF38F2700EB1119 /* Main.storyboard */; };
+		13810DED1FF38F2700EB1119 /* HeartVoiceViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */; };
 		73B4E24A26726A6ACDF0E3F7 /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13810D881FF38DB700EB1119;
 			remoteInfo = HeartVoiceWatch;
+		};
+		13810DE91FF38F2700EB1119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1332A73C1FF3885500470CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13810DD61FF38F2700EB1119;
+			remoteInfo = HeartVoiceViewer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,6 +106,16 @@
 		13810DA01FF38DB700EB1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13810DA21FF38DB700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13810DA31FF38DB700EB1119 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		13810DD71FF38F2700EB1119 /* HeartVoiceViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoiceViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13810DD91FF38F2700EB1119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13810DDB1FF38F2700EB1119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13810DDD1FF38F2700EB1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13810DE01FF38F2700EB1119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13810DE21FF38F2700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13810DE31FF38F2700EB1119 /* HeartVoiceViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartVoiceViewer.entitlements; sourceTree = "<group>"; };
+		13810DE81FF38F2700EB1119 /* HeartVoiceViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartVoiceViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceViewerTests.swift; sourceTree = "<group>"; };
+		13810DEE1FF38F2700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
 		3B25EFFA5FA602169E0EBB53 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,15 +143,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13810DD41FF38F2700EB1119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13810DE51FF38F2700EB1119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1320B0AC1FF38F7300EBE913 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				13810DD91FF38F2700EB1119 /* AppDelegate.swift */,
+				13810DDB1FF38F2700EB1119 /* ViewController.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1320B0AD1FF38F8000EBE913 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				13810DDD1FF38F2700EB1119 /* Assets.xcassets */,
+				13810DDF1FF38F2700EB1119 /* Main.storyboard */,
+				13810DE21FF38F2700EB1119 /* Info.plist */,
+				13810DE31FF38F2700EB1119 /* HeartVoiceViewer.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 		1332A73B1FF3885500470CD7 = {
 			isa = PBXGroup;
 			children = (
 				1332A7671FF3886A00470CD7 /* Resources */,
 				1332A7461FF3885500470CD7 /* Sources */,
 				1332A75B1FF3885500470CD7 /* Tests */,
+				13810DD81FF38F2700EB1119 /* HeartVoiceViewer */,
+				13810DEB1FF38F2700EB1119 /* HeartVoiceViewerTests */,
 				1332A7451FF3885500470CD7 /* Products */,
 				40067F4292384F02DA25D3D3 /* Pods */,
 				E05CE3BB0F5EAF7CB0833AFD /* Frameworks */,
@@ -143,6 +201,8 @@
 				1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */,
 				13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */,
 				13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */,
+				13810DD71FF38F2700EB1119 /* HeartVoiceViewer.app */,
+				13810DE81FF38F2700EB1119 /* HeartVoiceViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +210,7 @@
 		1332A7461FF3885500470CD7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1320B0AC1FF38F7300EBE913 /* macOS */,
 				1332A7691FF388A300470CD7 /* iOS */,
 				13810DAF1FF38DD200EB1119 /* watch */,
 			);
@@ -168,6 +229,7 @@
 		1332A7671FF3886A00470CD7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1320B0AD1FF38F8000EBE913 /* macOS */,
 				1332A7681FF3888600470CD7 /* iOS */,
 				13810D8A1FF38DB700EB1119 /* HeartVoiceWatch */,
 				13810D991FF38DB700EB1119 /* HeartVoiceWatch Extension */,
@@ -222,6 +284,22 @@
 				13810D9E1FF38DB700EB1119 /* NotificationController.swift */,
 			);
 			path = watch;
+			sourceTree = "<group>";
+		};
+		13810DD81FF38F2700EB1119 /* HeartVoiceViewer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeartVoiceViewer;
+			sourceTree = "<group>";
+		};
+		13810DEB1FF38F2700EB1119 /* HeartVoiceViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */,
+				13810DEE1FF38F2700EB1119 /* Info.plist */,
+			);
+			path = HeartVoiceViewerTests;
 			sourceTree = "<group>";
 		};
 		40067F4292384F02DA25D3D3 /* Pods */ = {
@@ -320,6 +398,42 @@
 			productReference = 13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		13810DD61FF38F2700EB1119 /* HeartVoiceViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewer" */;
+			buildPhases = (
+				1320B0AE1FF38FD800EBE913 /* ShellScript */,
+				13810DD31FF38F2700EB1119 /* Sources */,
+				13810DD41FF38F2700EB1119 /* Frameworks */,
+				13810DD51FF38F2700EB1119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartVoiceViewer;
+			productName = HeartVoiceViewer;
+			productReference = 13810DD71FF38F2700EB1119 /* HeartVoiceViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13810DE71FF38F2700EB1119 /* HeartVoiceViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13810DF41FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewerTests" */;
+			buildPhases = (
+				13810DE41FF38F2700EB1119 /* Sources */,
+				13810DE51FF38F2700EB1119 /* Frameworks */,
+				13810DE61FF38F2700EB1119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13810DEA1FF38F2700EB1119 /* PBXTargetDependency */,
+			);
+			name = HeartVoiceViewerTests;
+			productName = HeartVoiceViewerTests;
+			productReference = 13810DE81FF38F2700EB1119 /* HeartVoiceViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +461,15 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					13810DD61FF38F2700EB1119 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					13810DE71FF38F2700EB1119 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13810DD61FF38F2700EB1119;
+					};
 				};
 			};
 			buildConfigurationList = 1332A73F1FF3885500470CD7 /* Build configuration list for PBXProject "HeartVoice" */;
@@ -366,6 +489,8 @@
 				1332A7571FF3885500470CD7 /* HeartVoiceTests */,
 				13810D881FF38DB700EB1119 /* HeartVoiceWatch */,
 				13810D941FF38DB700EB1119 /* HeartVoiceWatch Extension */,
+				13810DD61FF38F2700EB1119 /* HeartVoiceViewer */,
+				13810DE71FF38F2700EB1119 /* HeartVoiceViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,9 +529,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13810DD51FF38F2700EB1119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13810DDE1FF38F2700EB1119 /* Assets.xcassets in Resources */,
+				13810DE11FF38F2700EB1119 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13810DE61FF38F2700EB1119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1320B0AE1FF38FD800EBE913 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SOURCE_ROOT}/Pods/SwiftLint/swiftlint";
+		};
 		13810D861FF38BC200EB1119 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +667,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13810DD31FF38F2700EB1119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13810DDC1FF38F2700EB1119 /* ViewController.swift in Sources */,
+				13810DDA1FF38F2700EB1119 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13810DE41FF38F2700EB1119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13810DED1FF38F2700EB1119 /* HeartVoiceViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -531,6 +702,11 @@
 			target = 13810D881FF38DB700EB1119 /* HeartVoiceWatch */;
 			targetProxy = 13810DA41FF38DB700EB1119 /* PBXContainerItemProxy */;
 		};
+		13810DEA1FF38F2700EB1119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13810DD61FF38F2700EB1119 /* HeartVoiceViewer */;
+			targetProxy = 13810DE91FF38F2700EB1119 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -548,6 +724,14 @@
 				13810D8C1FF38DB700EB1119 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		13810DDF1FF38F2700EB1119 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13810DE01FF38F2700EB1119 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -796,6 +980,80 @@
 			};
 			name = Release;
 		};
+		13810DEF1FF38F2700EB1119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/macOS/HeartVoiceViewer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		13810DF01FF38F2700EB1119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/macOS/HeartVoiceViewer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		13810DF11FF38F2700EB1119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HeartVoiceViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartVoiceViewer.app/Contents/MacOS/HeartVoiceViewer";
+			};
+			name = Debug;
+		};
+		13810DF21FF38F2700EB1119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HeartVoiceViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartVoiceViewer.app/Contents/MacOS/HeartVoiceViewer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -840,6 +1098,24 @@
 			buildConfigurations = (
 				13810DAC1FF38DB700EB1119 /* Debug */,
 				13810DAD1FF38DB700EB1119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13810DEF1FF38F2700EB1119 /* Debug */,
+				13810DF01FF38F2700EB1119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13810DF41FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13810DF11FF38F2700EB1119 /* Debug */,
+				13810DF21FF38F2700EB1119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

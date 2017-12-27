@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>HeartVoiceViewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>HeartVoiceWatch (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
