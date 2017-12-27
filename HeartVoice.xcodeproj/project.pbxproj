@@ -148,6 +148,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1332A7611FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoice" */;
 			buildPhases = (
+				13810D861FF38BC200EB1119 /* SwiftLint */,
 				F155E426D6BB1D532F85B4E9 /* [CP] Check Pods Manifest.lock */,
 				1332A7401FF3885500470CD7 /* Sources */,
 				1332A7411FF3885500470CD7 /* Frameworks */,
@@ -242,6 +243,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13810D861FF38BC200EB1119 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SOURCE_ROOT}/Pods/SwiftLint/swiftlint";
+		};
 		53F105C2636C2940A6AD4B77 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
