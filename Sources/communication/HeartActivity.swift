@@ -6,4 +6,14 @@
 //  Copyright © 2017 mzp. All rights reserved.
 //
 
-import Foundation
+struct HeartActivity: Equatable, Codable {
+    var heartrate: Int
+
+    init(_ heartrate: Int) {
+        self.heartrate = heartrate
+    }
+
+    static func == (lhs: HeartActivity, rhs: HeartActivity) -> Bool {
+        return lhs.heartrate == rhs.heartrate
+    }
+}

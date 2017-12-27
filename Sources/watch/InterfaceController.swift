@@ -14,6 +14,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var label: WKInterfaceLabel!
     private let healthStore: HKHealthStore = HKHealthStore()
     private var session: HKWorkoutSession?
+    private let watchSession: WatchSession = WatchSession()
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -106,6 +107,7 @@ extension InterfaceController: HKWorkoutSessionDelegate {
             }
             let value = sample.quantity.doubleValue(for: kHeartRateUnit)
             self.label.setText("💓\(String(UInt16(value)))")
+            self.watchSession.send(HeartActivity(Int(value)))
         }
     }
 }

@@ -27,6 +27,10 @@
 		13810DED1FF38F2700EB1119 /* HeartVoiceViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */; };
 		13F6683D1FF39AFD0078C0F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */; };
 		13F668411FF39E1C0078C0F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F668401FF39E1C0078C0F3 /* HealthKit.framework */; };
+		13F668441FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
+		13F668451FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
+		13F668471FF3BBC10078C0F3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668461FF3BBC10078C0F3 /* WatchSession.swift */; };
+		13F668481FF3BBC10078C0F3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668461FF3BBC10078C0F3 /* WatchSession.swift */; };
 		73B4E24A26726A6ACDF0E3F7 /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +126,8 @@
 		13F6683B1FF39AFD0078C0F3 /* HeartVoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartVoice.entitlements; sourceTree = "<group>"; };
 		13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		13F668401FF39E1C0078C0F3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartActivity.swift; sourceTree = "<group>"; };
+		13F668461FF3BBC10078C0F3 /* WatchSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
 		1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
 		3B25EFFA5FA602169E0EBB53 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +165,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		13810DE51FF38F2700EB1119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E81520A888CCC83CFA4ECE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +238,7 @@
 		1332A7461FF3885500470CD7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				13F668421FF3BB2C0078C0F3 /* communication */,
 				1320B0AC1FF38F7300EBE913 /* macOS */,
 				1332A7691FF388A300470CD7 /* iOS */,
 				13810DAF1FF38DD200EB1119 /* watch */,
@@ -312,6 +326,15 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		13F668421FF3BB2C0078C0F3 /* communication */ = {
+			isa = PBXGroup;
+			children = (
+				13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */,
+				13F668461FF3BBC10078C0F3 /* WatchSession.swift */,
+			);
+			path = communication;
+			sourceTree = "<group>";
+		};
 		40067F4292384F02DA25D3D3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,8 +361,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1332A7611FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoice" */;
 			buildPhases = (
-				13810D861FF38BC200EB1119 /* SwiftLint */,
 				F155E426D6BB1D532F85B4E9 /* [CP] Check Pods Manifest.lock */,
+				13810D861FF38BC200EB1119 /* SwiftLint */,
 				1332A7401FF3885500470CD7 /* Sources */,
 				1332A7411FF3885500470CD7 /* Frameworks */,
 				1332A7421FF3885500470CD7 /* Resources */,
@@ -381,6 +404,7 @@
 			buildPhases = (
 				13810D871FF38DB700EB1119 /* Resources */,
 				13810DAA1FF38DB700EB1119 /* Embed App Extensions */,
+				44E81520A888CCC83CFA4ECE /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -632,9 +656,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FootlessParser/FootlessParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NorthLayout/NorthLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FootlessParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorthLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -666,8 +695,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F668471FF3BBC10078C0F3 /* WatchSession.swift in Sources */,
 				1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */,
 				1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */,
+				13F668441FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,8 +715,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13810D9F1FF38DB700EB1119 /* NotificationController.swift in Sources */,
+				13F668481FF3BBC10078C0F3 /* WatchSession.swift in Sources */,
 				13810D9D1FF38DB700EB1119 /* ExtensionDelegate.swift in Sources */,
 				13810D9B1FF38DB700EB1119 /* InterfaceController.swift in Sources */,
+				13F668451FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
