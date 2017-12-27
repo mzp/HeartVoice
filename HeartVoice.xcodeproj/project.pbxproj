@@ -12,6 +12,14 @@
 		1332A74F1FF3885500470CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1332A74E1FF3885500470CD7 /* Assets.xcassets */; };
 		1332A75D1FF3885500470CD7 /* HeartVoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */; };
 		1332A76C1FF3897D00470CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332A76A1FF3897D00470CD7 /* LaunchScreen.storyboard */; };
+		13810D8D1FF38DB700EB1119 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13810D8B1FF38DB700EB1119 /* Interface.storyboard */; };
+		13810D8F1FF38DB700EB1119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13810D8E1FF38DB700EB1119 /* Assets.xcassets */; };
+		13810D961FF38DB700EB1119 /* HeartVoiceWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13810D9B1FF38DB700EB1119 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810D9A1FF38DB700EB1119 /* InterfaceController.swift */; };
+		13810D9D1FF38DB700EB1119 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810D9C1FF38DB700EB1119 /* ExtensionDelegate.swift */; };
+		13810D9F1FF38DB700EB1119 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810D9E1FF38DB700EB1119 /* NotificationController.swift */; };
+		13810DA11FF38DB700EB1119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13810DA01FF38DB700EB1119 /* Assets.xcassets */; };
+		13810DA61FF38DB700EB1119 /* HeartVoiceWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */; };
 		73B4E24A26726A6ACDF0E3F7 /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +31,46 @@
 			remoteGlobalIDString = 1332A7431FF3885500470CD7;
 			remoteInfo = HeartVoice;
 		};
+		13810D971FF38DB700EB1119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1332A73C1FF3885500470CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13810D941FF38DB700EB1119;
+			remoteInfo = "HeartVoiceWatch Extension";
+		};
+		13810DA41FF38DB700EB1119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1332A73C1FF3885500470CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13810D881FF38DB700EB1119;
+			remoteInfo = HeartVoiceWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13810DAA1FF38DB700EB1119 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13810D961FF38DB700EB1119 /* HeartVoiceWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13810DAE1FF38DB700EB1119 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				13810DA61FF38DB700EB1119 /* HeartVoiceWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +83,17 @@
 		1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceTests.swift; sourceTree = "<group>"; };
 		1332A75E1FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1332A76B1FF3897D00470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoiceWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13810D8C1FF38DB700EB1119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		13810D8E1FF38DB700EB1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13810D901FF38DB700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HeartVoiceWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13810D9A1FF38DB700EB1119 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		13810D9C1FF38DB700EB1119 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		13810D9E1FF38DB700EB1119 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		13810DA01FF38DB700EB1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13810DA21FF38DB700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13810DA31FF38DB700EB1119 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
 		3B25EFFA5FA602169E0EBB53 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +108,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1332A7551FF3885500470CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13810D921FF38DB700EB1119 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,6 +141,8 @@
 			children = (
 				1332A7441FF3885500470CD7 /* HeartVoice.app */,
 				1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */,
+				13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */,
+				13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1332A7691FF388A300470CD7 /* iOS */,
+				13810DAF1FF38DD200EB1119 /* watch */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -101,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				1332A7681FF3888600470CD7 /* iOS */,
+				13810D8A1FF38DB700EB1119 /* HeartVoiceWatch */,
+				13810D991FF38DB700EB1119 /* HeartVoiceWatch Extension */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -122,6 +192,36 @@
 				1332A7491FF3885500470CD7 /* ViewController.swift */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		13810D8A1FF38DB700EB1119 /* HeartVoiceWatch */ = {
+			isa = PBXGroup;
+			children = (
+				13810D8B1FF38DB700EB1119 /* Interface.storyboard */,
+				13810D8E1FF38DB700EB1119 /* Assets.xcassets */,
+				13810D901FF38DB700EB1119 /* Info.plist */,
+			);
+			path = HeartVoiceWatch;
+			sourceTree = "<group>";
+		};
+		13810D991FF38DB700EB1119 /* HeartVoiceWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				13810DA01FF38DB700EB1119 /* Assets.xcassets */,
+				13810DA21FF38DB700EB1119 /* Info.plist */,
+				13810DA31FF38DB700EB1119 /* PushNotificationPayload.apns */,
+			);
+			path = "HeartVoiceWatch Extension";
+			sourceTree = "<group>";
+		};
+		13810DAF1FF38DD200EB1119 /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				13810D9A1FF38DB700EB1119 /* InterfaceController.swift */,
+				13810D9C1FF38DB700EB1119 /* ExtensionDelegate.swift */,
+				13810D9E1FF38DB700EB1119 /* NotificationController.swift */,
+			);
+			path = watch;
 			sourceTree = "<group>";
 		};
 		40067F4292384F02DA25D3D3 /* Pods */ = {
@@ -155,10 +255,12 @@
 				1332A7421FF3885500470CD7 /* Resources */,
 				DDCCDFE7919EDCB4ABA5231A /* [CP] Embed Pods Frameworks */,
 				53F105C2636C2940A6AD4B77 /* [CP] Copy Pods Resources */,
+				13810DAE1FF38DB700EB1119 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13810DA51FF38DB700EB1119 /* PBXTargetDependency */,
 			);
 			name = HeartVoice;
 			productName = HeartVoice;
@@ -183,6 +285,41 @@
 			productReference = 1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		13810D881FF38DB700EB1119 /* HeartVoiceWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13810DAB1FF38DB700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceWatch" */;
+			buildPhases = (
+				13810D871FF38DB700EB1119 /* Resources */,
+				13810DAA1FF38DB700EB1119 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13810D981FF38DB700EB1119 /* PBXTargetDependency */,
+			);
+			name = HeartVoiceWatch;
+			productName = HeartVoiceWatch;
+			productReference = 13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		13810D941FF38DB700EB1119 /* HeartVoiceWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13810DA71FF38DB700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceWatch Extension" */;
+			buildPhases = (
+				13810DB01FF38E2C00EB1119 /* SwiftLint */,
+				13810D911FF38DB700EB1119 /* Sources */,
+				13810D921FF38DB700EB1119 /* Frameworks */,
+				13810D931FF38DB700EB1119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HeartVoiceWatch Extension";
+			productName = "HeartVoiceWatch Extension";
+			productReference = 13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +339,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1332A7431FF3885500470CD7;
 					};
+					13810D881FF38DB700EB1119 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					13810D941FF38DB700EB1119 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1332A73F1FF3885500470CD7 /* Build configuration list for PBXProject "HeartVoice" */;
@@ -219,6 +364,8 @@
 			targets = (
 				1332A7431FF3885500470CD7 /* HeartVoice */,
 				1332A7571FF3885500470CD7 /* HeartVoiceTests */,
+				13810D881FF38DB700EB1119 /* HeartVoiceWatch */,
+				13810D941FF38DB700EB1119 /* HeartVoiceWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -240,10 +387,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13810D871FF38DB700EB1119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13810D8F1FF38DB700EB1119 /* Assets.xcassets in Resources */,
+				13810D8D1FF38DB700EB1119 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13810D931FF38DB700EB1119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13810DA11FF38DB700EB1119 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		13810D861FF38BC200EB1119 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SOURCE_ROOT}/Pods/SwiftLint/swiftlint";
+		};
+		13810DB01FF38E2C00EB1119 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,6 +503,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13810D911FF38DB700EB1119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13810D9F1FF38DB700EB1119 /* NotificationController.swift in Sources */,
+				13810D9D1FF38DB700EB1119 /* ExtensionDelegate.swift in Sources */,
+				13810D9B1FF38DB700EB1119 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -332,6 +520,16 @@
 			isa = PBXTargetDependency;
 			target = 1332A7431FF3885500470CD7 /* HeartVoice */;
 			targetProxy = 1332A7591FF3885500470CD7 /* PBXContainerItemProxy */;
+		};
+		13810D981FF38DB700EB1119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13810D941FF38DB700EB1119 /* HeartVoiceWatch Extension */;
+			targetProxy = 13810D971FF38DB700EB1119 /* PBXContainerItemProxy */;
+		};
+		13810DA51FF38DB700EB1119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13810D881FF38DB700EB1119 /* HeartVoiceWatch */;
+			targetProxy = 13810DA41FF38DB700EB1119 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -342,6 +540,14 @@
 				1332A76B1FF3897D00470CD7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		13810D8B1FF38DB700EB1119 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13810D8C1FF38DB700EB1119 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -518,6 +724,78 @@
 			};
 			name = Release;
 		};
+		13810DA81FF38DB700EB1119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Resources/HeartVoiceWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		13810DA91FF38DB700EB1119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Resources/HeartVoiceWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		13810DAC1FF38DB700EB1119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG2YYSKSHY;
+				IBSC_MODULE = HeartVoiceWatch_Extension;
+				INFOPLIST_FILE = Resources/HeartVoiceWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		13810DAD1FF38DB700EB1119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG2YYSKSHY;
+				IBSC_MODULE = HeartVoiceWatch_Extension;
+				INFOPLIST_FILE = Resources/HeartVoiceWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,6 +822,24 @@
 			buildConfigurations = (
 				1332A7651FF3885500470CD7 /* Debug */,
 				1332A7661FF3885500470CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13810DA71FF38DB700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13810DA81FF38DB700EB1119 /* Debug */,
+				13810DA91FF38DB700EB1119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13810DAB1FF38DB700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13810DAC1FF38DB700EB1119 /* Debug */,
+				13810DAD1FF38DB700EB1119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
