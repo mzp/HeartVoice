@@ -91,7 +91,7 @@
 		1332A7491FF3885500470CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1332A74E1FF3885500470CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1332A7531FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1332A7581FF3885500470CD7 /* Tests(iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests(iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceTests.swift; sourceTree = "<group>"; };
 		1332A75E1FF3885500470CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1332A76B1FF3897D00470CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,14 +106,14 @@
 		13810DA01FF38DB700EB1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13810DA21FF38DB700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13810DA31FF38DB700EB1119 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		13810DD71FF38F2700EB1119 /* HeartVoiceViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoiceViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13810DD71FF38F2700EB1119 /* HeartVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13810DD91FF38F2700EB1119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13810DDB1FF38F2700EB1119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13810DDD1FF38F2700EB1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13810DE01FF38F2700EB1119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13810DE21FF38F2700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13810DE31FF38F2700EB1119 /* HeartVoiceViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartVoiceViewer.entitlements; sourceTree = "<group>"; };
-		13810DE81FF38F2700EB1119 /* HeartVoiceViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartVoiceViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13810DE81FF38F2700EB1119 /* Tests(macOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests(macOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceViewerTests.swift; sourceTree = "<group>"; };
 		13810DEE1FF38F2700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,11 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				1332A7441FF3885500470CD7 /* HeartVoice.app */,
-				1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */,
+				1332A7581FF3885500470CD7 /* Tests(iOS).xctest */,
 				13810D891FF38DB700EB1119 /* HeartVoiceWatch.app */,
 				13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */,
-				13810DD71FF38F2700EB1119 /* HeartVoiceViewer.app */,
-				13810DE81FF38F2700EB1119 /* HeartVoiceViewerTests.xctest */,
+				13810DD71FF38F2700EB1119 /* HeartVoice.app */,
+				13810DE81FF38F2700EB1119 /* Tests(macOS).xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,9 +345,9 @@
 			productReference = 1332A7441FF3885500470CD7 /* HeartVoice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1332A7571FF3885500470CD7 /* HeartVoiceTests */ = {
+		1332A7571FF3885500470CD7 /* Tests(iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1332A7641FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoiceTests" */;
+			buildConfigurationList = 1332A7641FF3885500470CD7 /* Build configuration list for PBXNativeTarget "Tests(iOS)" */;
 			buildPhases = (
 				1332A7541FF3885500470CD7 /* Sources */,
 				1332A7551FF3885500470CD7 /* Frameworks */,
@@ -358,9 +358,9 @@
 			dependencies = (
 				1332A75A1FF3885500470CD7 /* PBXTargetDependency */,
 			);
-			name = HeartVoiceTests;
+			name = "Tests(iOS)";
 			productName = HeartVoiceTests;
-			productReference = 1332A7581FF3885500470CD7 /* HeartVoiceTests.xctest */;
+			productReference = 1332A7581FF3885500470CD7 /* Tests(iOS).xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		13810D881FF38DB700EB1119 /* HeartVoiceWatch */ = {
@@ -398,9 +398,9 @@
 			productReference = 13810D951FF38DB700EB1119 /* HeartVoiceWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		13810DD61FF38F2700EB1119 /* HeartVoiceViewer */ = {
+		13810DD61FF38F2700EB1119 /* HeartVoice(macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewer" */;
+			buildConfigurationList = 13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoice(macOS)" */;
 			buildPhases = (
 				1320B0AE1FF38FD800EBE913 /* ShellScript */,
 				13810DD31FF38F2700EB1119 /* Sources */,
@@ -411,14 +411,14 @@
 			);
 			dependencies = (
 			);
-			name = HeartVoiceViewer;
+			name = "HeartVoice(macOS)";
 			productName = HeartVoiceViewer;
-			productReference = 13810DD71FF38F2700EB1119 /* HeartVoiceViewer.app */;
+			productReference = 13810DD71FF38F2700EB1119 /* HeartVoice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		13810DE71FF38F2700EB1119 /* HeartVoiceViewerTests */ = {
+		13810DE71FF38F2700EB1119 /* Tests(macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13810DF41FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewerTests" */;
+			buildConfigurationList = 13810DF41FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "Tests(macOS)" */;
 			buildPhases = (
 				13810DE41FF38F2700EB1119 /* Sources */,
 				13810DE51FF38F2700EB1119 /* Frameworks */,
@@ -429,9 +429,9 @@
 			dependencies = (
 				13810DEA1FF38F2700EB1119 /* PBXTargetDependency */,
 			);
-			name = HeartVoiceViewerTests;
+			name = "Tests(macOS)";
 			productName = HeartVoiceViewerTests;
-			productReference = 13810DE81FF38F2700EB1119 /* HeartVoiceViewerTests.xctest */;
+			productReference = 13810DE81FF38F2700EB1119 /* Tests(macOS).xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -488,9 +488,9 @@
 				1332A7431FF3885500470CD7 /* HeartVoice */,
 				13810D881FF38DB700EB1119 /* HeartVoiceWatch */,
 				13810D941FF38DB700EB1119 /* HeartVoiceWatch Extension */,
-				13810DD61FF38F2700EB1119 /* HeartVoiceViewer */,
-				13810DE71FF38F2700EB1119 /* HeartVoiceViewerTests */,
-				1332A7571FF3885500470CD7 /* HeartVoiceTests */,
+				13810DD61FF38F2700EB1119 /* HeartVoice(macOS) */,
+				13810DE71FF38F2700EB1119 /* Tests(macOS) */,
+				1332A7571FF3885500470CD7 /* Tests(iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -704,7 +704,7 @@
 		};
 		13810DEA1FF38F2700EB1119 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13810DD61FF38F2700EB1119 /* HeartVoiceViewer */;
+			target = 13810DD61FF38F2700EB1119 /* HeartVoice(macOS) */;
 			targetProxy = 13810DE91FF38F2700EB1119 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -992,7 +992,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HeartVoice;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
 			};
@@ -1010,7 +1010,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HeartVoice;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
 			};
@@ -1075,7 +1075,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1332A7641FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoiceTests" */ = {
+		1332A7641FF3885500470CD7 /* Build configuration list for PBXNativeTarget "Tests(iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1332A7651FF3885500470CD7 /* Debug */,
@@ -1102,7 +1102,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewer" */ = {
+		13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoice(macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13810DEF1FF38F2700EB1119 /* Debug */,
@@ -1111,7 +1111,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13810DF41FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceViewerTests" */ = {
+		13810DF41FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "Tests(macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13810DF11FF38F2700EB1119 /* Debug */,
