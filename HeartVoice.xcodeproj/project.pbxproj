@@ -180,14 +180,21 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		1320B0AF1FF3901C00EBE913 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */,
+				1332A75E1FF3885500470CD7 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		1332A73B1FF3885500470CD7 = {
 			isa = PBXGroup;
 			children = (
 				1332A7671FF3886A00470CD7 /* Resources */,
 				1332A7461FF3885500470CD7 /* Sources */,
 				1332A75B1FF3885500470CD7 /* Tests */,
-				13810DD81FF38F2700EB1119 /* HeartVoiceViewer */,
-				13810DEB1FF38F2700EB1119 /* HeartVoiceViewerTests */,
 				1332A7451FF3885500470CD7 /* Products */,
 				40067F4292384F02DA25D3D3 /* Pods */,
 				E05CE3BB0F5EAF7CB0833AFD /* Frameworks */,
@@ -220,8 +227,8 @@
 		1332A75B1FF3885500470CD7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1332A75C1FF3885500470CD7 /* HeartVoiceTests.swift */,
-				1332A75E1FF3885500470CD7 /* Info.plist */,
+				1320B0AF1FF3901C00EBE913 /* iOS */,
+				13810DEB1FF38F2700EB1119 /* macOS */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -286,20 +293,13 @@
 			path = watch;
 			sourceTree = "<group>";
 		};
-		13810DD81FF38F2700EB1119 /* HeartVoiceViewer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeartVoiceViewer;
-			sourceTree = "<group>";
-		};
-		13810DEB1FF38F2700EB1119 /* HeartVoiceViewerTests */ = {
+		13810DEB1FF38F2700EB1119 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
 				13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */,
 				13810DEE1FF38F2700EB1119 /* Info.plist */,
 			);
-			path = HeartVoiceViewerTests;
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		40067F4292384F02DA25D3D3 /* Pods */ = {
@@ -486,11 +486,11 @@
 			projectRoot = "";
 			targets = (
 				1332A7431FF3885500470CD7 /* HeartVoice */,
-				1332A7571FF3885500470CD7 /* HeartVoiceTests */,
 				13810D881FF38DB700EB1119 /* HeartVoiceWatch */,
 				13810D941FF38DB700EB1119 /* HeartVoiceWatch Extension */,
 				13810DD61FF38F2700EB1119 /* HeartVoiceViewer */,
 				13810DE71FF38F2700EB1119 /* HeartVoiceViewerTests */,
+				1332A7571FF3885500470CD7 /* HeartVoiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -882,7 +882,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HeartVoiceTests/Info.plist;
+				INFOPLIST_FILE = Tests/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -898,7 +898,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HeartVoiceTests/Info.plist;
+				INFOPLIST_FILE = Tests/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1024,7 +1024,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = HeartVoiceViewerTests/Info.plist;
+				INFOPLIST_FILE = Tests/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewerTests;
@@ -1043,7 +1043,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = HeartVoiceViewerTests/Info.plist;
+				INFOPLIST_FILE = Tests/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.HeartVoiceViewerTests;
