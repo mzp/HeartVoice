@@ -5,5 +5,6 @@ abstract_target 'App' do
 
   target 'HeartVoice' do
     platform :ios, '11.0'
+    pod 'NorthLayout', '~> 5'
   end
 end

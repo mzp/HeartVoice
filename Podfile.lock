@@ -1,12 +1,18 @@
 PODS:
-  - SwiftLint (0.23.1)
+  - FootlessParser (0.4.1)
+  - NorthLayout (5.0.0):
+    - FootlessParser (~> 0.4)
+  - SwiftLint (0.24.0)
 
 DEPENDENCIES:
+  - NorthLayout (= 5.0.0)
   - SwiftLint
 
 SPEC CHECKSUMS:
-  SwiftLint: 1b670ce79284c76520f84060e87d645078fd32fa
+  FootlessParser: 4705a9a740675b7439d9563f2fad83f7b84fc773
+  NorthLayout: 718fecaf16d90c82788e452b1280ff3d39c193c5
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
 
-PODFILE CHECKSUM: 92736a34cbbda720f3bfbb4b9b043da211476970
+PODFILE CHECKSUM: 251f45e91c1960ca36e067246955084a72675589
 
 COCOAPODS: 1.3.1

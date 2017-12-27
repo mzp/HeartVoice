@@ -100,6 +100,15 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser/FootlessParser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout/NorthLayout.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser/FootlessParser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout/NorthLayout.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
