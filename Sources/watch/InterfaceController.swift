@@ -23,7 +23,7 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
 
-        heartRate.source.signal.observeValues { value in
+        heartRate.source.signal.throttle(5, on: QueueScheduler.main).observeValues { value in
             self.watchSession.send(HeartActivity(value))
         }
         heartRate.source.signal.observe(on: QueueScheduler.main).observeValues { value in
