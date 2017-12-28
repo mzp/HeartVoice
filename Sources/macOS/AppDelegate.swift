@@ -10,9 +10,18 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    @IBOutlet weak var window: NSWindow!
+    private let viewController = ViewController()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        if let cv = window.contentView {
+
+            let autolayout = cv.northLayoutFormat([:], [
+                "main": viewController.view
+            ])
+            autolayout("H:|[main]|")
+            autolayout("V:|[main]|")
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

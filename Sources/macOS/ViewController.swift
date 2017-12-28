@@ -16,6 +16,10 @@ class ViewController: NSViewController {
     let heartrate = NSTextField()
     var server: HeartVoiceServiceServer?
 
+    override func loadView() {
+        view = NSView()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
