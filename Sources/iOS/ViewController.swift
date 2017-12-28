@@ -15,6 +15,7 @@ class ViewController: UITableViewController {
 
     init() {
         super.init(style: .grouped)
+        title = "HeartVoice"
         browser.onStateChange = { [weak self] in
             self?.tableView.reloadData()
         }
