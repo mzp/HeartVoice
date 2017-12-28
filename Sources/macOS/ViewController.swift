@@ -29,6 +29,10 @@ class ViewController: NSViewController {
 
         heartrate.isEditable = false
         heartrate.stringValue = "-"
+        heartrate.isBordered = false
+        heartrate.drawsBackground = false
+        heartrate.font = NSFont.systemFont(ofSize: 42.0)
+        heartrate.textColor = NSColor.white
 
         let autolayout = view.northLayoutFormat(["p": 20], [
             "server": button,
@@ -37,7 +41,7 @@ class ViewController: NSViewController {
         autolayout("H:|-p-[server]-p-|")
         autolayout("H:|-p-[heartrate]-p-|")
         autolayout("V:[server]-p-|")
-        autolayout("V:[heartrate]-p-[server]-p-|")
+        autolayout("V:|-p-[heartrate]")
 
     }
 
@@ -50,7 +54,7 @@ class ViewController: NSViewController {
     @objc private func becomeAServer(_ sender: AnyObject?) {
         server = HeartVoiceServiceServer(name: ProcessInfo().hostName)
         server?.activty.signal.observe(on: QueueScheduler.main).observeValues { activity in
-            self.heartrate.stringValue = "💓\(activity.heartrate)"
+            self.heartrate.stringValue = "♥\(activity.heartrate)"
         }
         server?.peers.signal.observe(on: QueueScheduler.main).observeValues { peers in
             if self.server != nil {

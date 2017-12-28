@@ -15,6 +15,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let cv = window.contentView {
+            window.backgroundColor = NSColor.clear
+            window.isOpaque = false
+            window.title = ""
 
             let autolayout = cv.northLayoutFormat([:], [
                 "main": viewController.view
