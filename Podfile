@@ -12,4 +12,9 @@ abstract_target 'App' do
     platform :osx, '10.13'
     pod 'NorthLayout', '~> 5'
   end
+
+  target 'HeartVoiceWatch Extension' do
+    platform :watchos, '4.2'
+    pod 'ReactiveSwift'
+  end
 end

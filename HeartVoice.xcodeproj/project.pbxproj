@@ -41,6 +41,7 @@
 		13F668451FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
 		13F668471FF3BBC10078C0F3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668461FF3BBC10078C0F3 /* WatchSession.swift */; };
 		13F668481FF3BBC10078C0F3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668461FF3BBC10078C0F3 /* WatchSession.swift */; };
+		5245168997D0C782675117CD /* Pods_App_HeartVoiceWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203BE4E3AF2B053E5F217C54 /* Pods_App_HeartVoiceWatch_Extension.framework */; };
 		53AAEF47F0F946851F63C3DE /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */; };
 		D0F212ED0B62BDF8F0E0DDA4 /* Pods_App_HeartVoice_macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */; };
 /* End PBXBuildFile section */
@@ -143,11 +144,14 @@
 		13F668401FF39E1C0078C0F3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartActivity.swift; sourceTree = "<group>"; };
 		13F668461FF3BBC10078C0F3 /* WatchSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
+		203BE4E3AF2B053E5F217C54 /* Pods_App_HeartVoiceWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoiceWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B28DBBD994BB06434FD1C1C /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
 		71B9A80BD5B44C3D33D78D7D /* Pods-App-HeartVoice(macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice(macOS).release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).release.xcconfig"; sourceTree = "<group>"; };
 		9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice_macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7508D500540BED992DF4579 /* Pods-App-HeartVoiceWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoiceWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
+		C4D5B621B97D61A883D94105 /* Pods-App-HeartVoiceWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoiceWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice(macOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F668411FF39E1C0078C0F3 /* HealthKit.framework in Frameworks */,
+				5245168997D0C782675117CD /* Pods_App_HeartVoiceWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +380,8 @@
 				B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */,
 				FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */,
 				71B9A80BD5B44C3D33D78D7D /* Pods-App-HeartVoice(macOS).release.xcconfig */,
+				C4D5B621B97D61A883D94105 /* Pods-App-HeartVoiceWatch Extension.debug.xcconfig */,
+				A7508D500540BED992DF4579 /* Pods-App-HeartVoiceWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -386,6 +393,7 @@
 				13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */,
 				A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */,
 				9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */,
+				203BE4E3AF2B053E5F217C54 /* Pods_App_HeartVoiceWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,10 +464,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13810DA71FF38DB700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoiceWatch Extension" */;
 			buildPhases = (
+				5947189076831D4521907B67 /* [CP] Check Pods Manifest.lock */,
 				13810DB01FF38E2C00EB1119 /* SwiftLint */,
 				13810D911FF38DB700EB1119 /* Sources */,
 				13810D921FF38DB700EB1119 /* Frameworks */,
 				13810D931FF38DB700EB1119 /* Resources */,
+				3B7C4AFA208B62D5F606CA3B /* [CP] Embed Pods Frameworks */,
+				D09C96ADF14B54F5E53B3EED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -692,6 +703,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3B7C4AFA208B62D5F606CA3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5610B52D3CB861B0D4775378 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -710,6 +741,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5947189076831D4521907B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-HeartVoiceWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7704ECE50FB05081F7FD01B5 /* [CP] Copy Pods Resources */ = {
@@ -743,6 +792,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09C96ADF14B54F5E53B3EED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5E3F79DE03BF5E0854EAC4E /* [CP] Copy Pods Resources */ = {
@@ -1069,6 +1133,7 @@
 		};
 		13810DA81FF38DB700EB1119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D5B621B97D61A883D94105 /* Pods-App-HeartVoiceWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Resources/HeartVoiceWatch Extension/HeartVoiceWatch Extension.entitlements";
@@ -1088,6 +1153,7 @@
 		};
 		13810DA91FF38DB700EB1119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7508D500540BED992DF4579 /* Pods-App-HeartVoiceWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Resources/HeartVoiceWatch Extension/HeartVoiceWatch Extension.entitlements";

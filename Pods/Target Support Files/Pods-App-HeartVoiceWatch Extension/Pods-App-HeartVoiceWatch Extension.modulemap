@@ -1,0 +1,6 @@
+framework module Pods_App_HeartVoiceWatch_Extension {
+  umbrella header "Pods-App-HeartVoiceWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
