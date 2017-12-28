@@ -25,6 +25,15 @@
 		13810DDE1FF38F2700EB1119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13810DDD1FF38F2700EB1119 /* Assets.xcassets */; };
 		13810DE11FF38F2700EB1119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13810DDF1FF38F2700EB1119 /* Main.storyboard */; };
 		13810DED1FF38F2700EB1119 /* HeartVoiceViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */; };
+		139E5AD71FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD31FF494150016F066 /* HeartVoiceServiceServer.swift */; };
+		139E5AD81FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD31FF494150016F066 /* HeartVoiceServiceServer.swift */; };
+		139E5AD91FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD41FF494150016F066 /* HeartVoiceServiceClient.swift */; };
+		139E5ADA1FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD41FF494150016F066 /* HeartVoiceServiceClient.swift */; };
+		139E5ADB1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD51FF494150016F066 /* HeartVoiceServiceBrowser.swift */; };
+		139E5ADC1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD51FF494150016F066 /* HeartVoiceServiceBrowser.swift */; };
+		139E5ADD1FF494150016F066 /* HeartVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD61FF494150016F066 /* HeartVoiceService.swift */; };
+		139E5ADE1FF494150016F066 /* HeartVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD61FF494150016F066 /* HeartVoiceService.swift */; };
+		139E5AE11FF49B4A0016F066 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
 		13F6683D1FF39AFD0078C0F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */; };
 		13F668411FF39E1C0078C0F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F668401FF39E1C0078C0F3 /* HealthKit.framework */; };
 		13F668441FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
@@ -248,6 +257,7 @@
 		1332A7461FF3885500470CD7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				139E5AC61FF493BC0016F066 /* service */,
 				13F668421FF3BB2C0078C0F3 /* communication */,
 				1320B0AC1FF38F7300EBE913 /* macOS */,
 				1332A7691FF388A300470CD7 /* iOS */,
@@ -334,6 +344,17 @@
 				13810DEE1FF38F2700EB1119 /* Info.plist */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		139E5AC61FF493BC0016F066 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				139E5AD61FF494150016F066 /* HeartVoiceService.swift */,
+				139E5AD41FF494150016F066 /* HeartVoiceServiceClient.swift */,
+				139E5AD31FF494150016F066 /* HeartVoiceServiceServer.swift */,
+				139E5AD51FF494150016F066 /* HeartVoiceServiceBrowser.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		13F668421FF3BB2C0078C0F3 /* communication */ = {
@@ -764,8 +785,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139E5ADD1FF494150016F066 /* HeartVoiceService.swift in Sources */,
 				13F668471FF3BBC10078C0F3 /* WatchSession.swift in Sources */,
+				139E5AD91FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */,
+				139E5ADB1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */,
 				1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */,
+				139E5AD71FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */,
 				1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */,
 				13F668441FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */,
 			);
@@ -795,7 +820,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139E5ADE1FF494150016F066 /* HeartVoiceService.swift in Sources */,
+				139E5AE11FF49B4A0016F066 /* HeartActivity.swift in Sources */,
+				139E5AD81FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */,
+				139E5ADA1FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */,
 				13810DDC1FF38F2700EB1119 /* ViewController.swift in Sources */,
+				139E5ADC1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */,
 				13810DDA1FF38F2700EB1119 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
