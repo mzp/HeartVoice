@@ -10,9 +10,9 @@ import Foundation
 import MultipeerConnectivity
 
 class HeartVoiceServiceServer: NSObject {
-    fileprivate let myPeerID: MCPeerID
-    fileprivate var sessions = [MCSession]()
-    fileprivate let advertiser: MCNearbyServiceAdvertiser
+    private let myPeerID: MCPeerID
+    private var sessions = [MCSession]()
+    private let advertiser: MCNearbyServiceAdvertiser
 
     var peers: [[MCPeerID]] { return sessions.map {$0.connectedPeers} }
     var onStateChange: (() -> Void)?
