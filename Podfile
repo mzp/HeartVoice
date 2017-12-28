@@ -13,6 +13,7 @@ abstract_target 'App' do
   target 'HeartVoice(macOS)' do
     platform :osx, '10.13'
     pod 'NorthLayout', '~> 5'
+    pod 'ReactiveCocoa'
     pod 'ReactiveSwift'
   end
 
