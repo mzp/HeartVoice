@@ -12,7 +12,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HeartVoiceWatch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HeartVoiceWatch_Extension">
                     <items>
                         <label width="136" alignment="left" text="-" id="AaX-ZS-gzL">
                             <fontDescription key="font" type="system" pointSize="42"/>
@@ -20,10 +20,35 @@
                     </items>
                     <connections>
                         <outlet property="label" destination="AaX-ZS-gzL" id="YDg-7v-9s8"/>
+                        <segue destination="hXX-vf-DtV" kind="relationship" relationship="nextPage" id="rkt-9x-KUP"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Workout Controller-->
+        <scene sceneID="LxS-7X-9eJ">
+            <objects>
+                <controller id="hXX-vf-DtV" customClass="WorkoutController" customModule="HeartVoiceWatch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="5UU-f1-EZQ">
+                            <connections>
+                                <action selector="start" destination="hXX-vf-DtV" id="Bqo-CR-7Wc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="LXa-fV-j7N">
+                            <connections>
+                                <action selector="stop" destination="hXX-vf-DtV" id="JFk-8w-L2a"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="startButton" destination="5UU-f1-EZQ" id="N5d-CR-Ffc"/>
+                        <outlet property="stopButton" destination="LXa-fV-j7N" id="y2j-he-3rN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
