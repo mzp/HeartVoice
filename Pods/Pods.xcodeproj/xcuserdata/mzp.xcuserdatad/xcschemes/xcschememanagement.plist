@@ -49,12 +49,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveSwift-macOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ReactiveSwift-watchOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Result-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result-macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

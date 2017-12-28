@@ -738,11 +738,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS)-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FootlessParser-macOS/FootlessParser.framework",
 				"${BUILT_PRODUCTS_DIR}/NorthLayout-macOS/NorthLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-macOS/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FootlessParser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorthLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

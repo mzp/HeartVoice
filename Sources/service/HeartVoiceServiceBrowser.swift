@@ -8,22 +8,23 @@
 
 import Foundation
 import MultipeerConnectivity
+import ReactiveSwift
 
 class HeartVoiceServiceBrowser: NSObject {
     fileprivate let myPeerID: MCPeerID
     fileprivate let browser: MCNearbyServiceBrowser
 
     /// 1 session per 1 server, 1 session have multiple peers
-    var sessions: [MCSession] = []
+    let sessions: Property<[MCSession]>
+    private let mutableSessions: MutableProperty<[MCSession]>
 
-    var onStateChange: (() -> Void)?
-
-    init(name: String, onStateChange: (() -> Void)? = nil) {
+    init(name: String) {
+        mutableSessions = MutableProperty<[MCSession]>([])
+        sessions = Property(mutableSessions)
         myPeerID = MCPeerID(displayName: HeartVoiceService.clientPrefix + name)
         browser = MCNearbyServiceBrowser(peer: myPeerID, serviceType: HeartVoiceService.serviceType)
         super.init()
         browser.delegate = self
-        self.onStateChange = onStateChange
     }
 
     func start() {
@@ -43,13 +44,16 @@ extension HeartVoiceServiceBrowser: MCSessionDelegate {
 
             switch state {
             case .notConnected:
-                guard let removedIndex = self.sessions.index(of: session) else { break }
-                self.sessions.remove(at: removedIndex)
-            case .connecting: break
-            case .connected: break
+                self.mutableSessions.modify { (sessions: inout [MCSession]) in
+                    guard let removedIndex = sessions.index(of: session) else { return }
+                    sessions.remove(at: removedIndex)
+                }
+                break
+            case .connecting:
+                break
+            case .connected:
+                self.mutableSessions.swap(self.mutableSessions.value)
             }
-
-            self.onStateChange?()
         }
     }
 
@@ -81,15 +85,14 @@ extension HeartVoiceServiceBrowser: MCNearbyServiceBrowserDelegate {
             if !peerID.isServer { return }
             NSLog("%@", "PartyPlayServiceBrowser found server: \(peerID)")
 
-            if self.sessions.index(where: { session in
+            if self.sessions.value.index(where: { session in
                 session.server?.displayName == peerID.displayName
             }) == nil {
                 NSLog("%@", "new peer detected. auto-connect.")
 
                 let session = MCSession(peer: self.myPeerID)
                 session.delegate = self
-                self.sessions.append(session)
-
+                self.mutableSessions.modify { $0.append(session) }
                 browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30)
             }
         }
