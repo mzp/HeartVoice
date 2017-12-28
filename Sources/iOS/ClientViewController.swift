@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import NorthLayout
+import ReactiveCocoa
+import ReactiveSwift
 
 class ClientViewController: UIViewController {
     private lazy var watchSession: WatchSession = WatchSession()
@@ -39,11 +41,10 @@ class ClientViewController: UIViewController {
         autolayout("H:||[label]||")
         autolayout("V:||[label]||")
 
-        watchSession.onActivity = { activity in
-            DispatchQueue.main.async {
-                label.text = "💓\(activity.heartrate)"
-            }
-            self.client.send(activity: activity)
+        label.reactive.text <~ watchSession.activity.map { "💓\($0.heartrate)" }
+
+        watchSession.activity.signal.observeValues {
+            self.client.send(activity: $0)
         }
     }
 }

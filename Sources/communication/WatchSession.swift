@@ -8,9 +8,11 @@
 
 import Foundation
 import WatchConnectivity
+import ReactiveSwift
 
 class WatchSession: NSObject {
-    var onActivity: ((HeartActivity) -> Void)?
+    let activity: Property<HeartActivity>
+    private let mutableActivity: MutableProperty<HeartActivity>
 
     private lazy var session: WCSession? = {
         if WCSession.isSupported() {
@@ -21,6 +23,8 @@ class WatchSession: NSObject {
     }()
 
     override init() {
+        mutableActivity = MutableProperty(HeartActivity(0))
+        activity = Property(mutableActivity)
         super.init()
         session?.delegate = self
         session?.activate()
@@ -65,7 +69,7 @@ extension WatchSession: WCSessionDelegate {
                 return
             }
             NSLog("\(activity)")
-            self.onActivity?(activity)
+            self.mutableActivity.swap(activity)
         }
     }
 }
