@@ -8,23 +8,23 @@
 
 import Foundation
 import MultipeerConnectivity
+import ReactiveSwift
 
 class HeartVoiceServiceServer: NSObject {
     private let myPeerID: MCPeerID
-    private var sessions = [MCSession]()
+    private let sessions: MutableProperty<[MCSession]> = MutableProperty([])
     private let advertiser: MCNearbyServiceAdvertiser
 
-    var peers: [[MCPeerID]] { return sessions.map {$0.connectedPeers} }
-    var onStateChange: (() -> Void)?
+    let peers: Property<[[MCPeerID]]>
     var onActivity: ((HeartActivity) -> Void)?
 
-    init(name: String, onStateChange: (() -> Void)? = nil) {
+    init(name: String) {
         myPeerID = MCPeerID(displayName: HeartVoiceService.serverPrefix + name)
         advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil,
                                                serviceType: HeartVoiceService.serviceType)
+        peers = sessions.map { $0.map { $0.connectedPeers } }
         super.init()
         advertiser.delegate = self
-        self.onStateChange = onStateChange
     }
 
     func start() {
@@ -33,8 +33,8 @@ class HeartVoiceServiceServer: NSObject {
 
     func stop() {
         advertiser.stopAdvertisingPeer()
-        sessions.forEach {$0.disconnect()}
-        sessions.removeAll()
+        sessions.value.forEach {$0.disconnect()}
+        sessions.swap([])
     }
 }
 
@@ -42,11 +42,10 @@ class HeartVoiceServiceServer: NSObject {
 extension HeartVoiceServiceServer: MCSessionDelegate {
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         DispatchQueue.main.async {
-            if state == .notConnected, let index = self.sessions.index(of: session) {
-                self.sessions.remove(at: index)
+            if state == .notConnected, let index = self.sessions.value.index(of: session) {
+                self.sessions.modify { $0.remove(at: index) }
             }
             NSLog("%@", "Server: peer = \(peerID), state = \(state.rawValue). total peers = \(self.peers)")
-            self.onStateChange?()
         }
     }
 
@@ -84,7 +83,7 @@ extension HeartVoiceServiceServer: MCNearbyServiceAdvertiserDelegate {
 
             let session = MCSession(peer: self.myPeerID)
             session.delegate = self
-            self.sessions.append(session)
+            self.sessions.modify { $0.append(session) }
             invitationHandler(true, session)
         }
     }

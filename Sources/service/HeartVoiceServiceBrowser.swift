@@ -48,7 +48,6 @@ extension HeartVoiceServiceBrowser: MCSessionDelegate {
                     guard let removedIndex = sessions.index(of: session) else { return }
                     sessions.remove(at: removedIndex)
                 }
-                break
             case .connecting:
                 break
             case .connected:
