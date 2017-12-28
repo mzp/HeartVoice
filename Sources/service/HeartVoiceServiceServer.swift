@@ -14,11 +14,14 @@ class HeartVoiceServiceServer: NSObject {
     private let myPeerID: MCPeerID
     private let sessions: MutableProperty<[MCSession]> = MutableProperty([])
     private let advertiser: MCNearbyServiceAdvertiser
+    private let mutableActivity: MutableProperty<HeartActivity>
 
     let peers: Property<[[MCPeerID]]>
-    var onActivity: ((HeartActivity) -> Void)?
+    let activty: Property<HeartActivity>
 
     init(name: String) {
+        mutableActivity = MutableProperty(HeartActivity(0))
+        activty = Property(mutableActivity)
         myPeerID = MCPeerID(displayName: HeartVoiceService.serverPrefix + name)
         advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil,
                                                serviceType: HeartVoiceService.serviceType)
@@ -54,7 +57,7 @@ extension HeartVoiceServiceServer: MCSessionDelegate {
             return
         }
         NSLog("\(activity)")
-        self.onActivity?(activity)
+        mutableActivity.swap(activity)
     }
 
     func session(_ session: MCSession, didReceive stream: InputStream,

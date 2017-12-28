@@ -9,6 +9,7 @@
 import Cocoa
 import NorthLayout
 import ReactiveSwift
+import ReactiveCocoa
 
 class ViewController: NSViewController {
     let button = NSButton()
@@ -44,11 +45,8 @@ class ViewController: NSViewController {
 
     @objc private func becomeAServer(_ sender: AnyObject?) {
         server = HeartVoiceServiceServer(name: ProcessInfo().hostName)
-
-        server?.onActivity = { activity in
-            DispatchQueue.main.async {
-                self.heartrate.stringValue = "💓\(activity.heartrate)"
-            }
+        server?.activty.signal.observe(on: QueueScheduler.main).observeValues { activity in
+            self.heartrate.stringValue = "💓\(activity.heartrate)"
         }
         server?.peers.signal.observe(on: QueueScheduler.main).observeValues { peers in
             if self.server != nil {
