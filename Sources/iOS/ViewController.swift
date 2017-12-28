@@ -10,28 +10,26 @@ import UIKit
 import HealthKit
 import NorthLayout
 
-class ViewController: UIViewController {
-    private lazy var watchSession: WatchSession = WatchSession()
+class ViewController: UITableViewController {
+    private let browser = HeartVoiceServiceBrowser(name: UIDevice.current.name)
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.backgroundColor = UIColor.white
-        let label = UILabel()
-        label.text = "--"
-        label.font = UIFont.systemFont(ofSize: 42.0)
-
-        let autolayout = northLayoutFormat([:], [
-            "label": label
-        ])
-        autolayout("H:||[label]||")
-        autolayout("V:||[label]||")
-
-        watchSession.onActivity = { activity in
-            DispatchQueue.main.async {
-                label.text = "💓\(activity.heartrate)"
-            }
+    init() {
+        super.init(style: .grouped)
+        browser.onStateChange = { [weak self] in
+            self?.tableView.reloadData()
         }
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        browser.start()
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        browser.stop()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,4 +37,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return browser.sessions.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let session = browser.sessions[indexPath.row]
+        cell.textLabel?.text = session.server?.displayNameWithoutPrefix ?? "Connecting to server..."
+        cell.accessoryType = .detailDisclosureButton
+        return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let session = browser.sessions[indexPath.row]
+        guard let server = session.server else {
+            return
+        }
+        let vc = ClientViewController(client: HeartVoiceServiceClient(session: session, server: server))
+        present(vc, animated: true) {}
+    }
 }

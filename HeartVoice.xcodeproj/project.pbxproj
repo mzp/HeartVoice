@@ -33,6 +33,7 @@
 		139E5ADC1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD51FF494150016F066 /* HeartVoiceServiceBrowser.swift */; };
 		139E5ADD1FF494150016F066 /* HeartVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD61FF494150016F066 /* HeartVoiceService.swift */; };
 		139E5ADE1FF494150016F066 /* HeartVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5AD61FF494150016F066 /* HeartVoiceService.swift */; };
+		139E5AE01FF498810016F066 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E5ADF1FF498810016F066 /* ClientViewController.swift */; };
 		139E5AE11FF49B4A0016F066 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
 		13F6683D1FF39AFD0078C0F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */; };
 		13F668411FF39E1C0078C0F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F668401FF39E1C0078C0F3 /* HealthKit.framework */; };
@@ -302,6 +303,7 @@
 			children = (
 				1332A7471FF3885500470CD7 /* AppDelegate.swift */,
 				1332A7491FF3885500470CD7 /* ViewController.swift */,
+				139E5ADF1FF498810016F066 /* ClientViewController.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -790,6 +792,7 @@
 				139E5AD91FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */,
 				139E5ADB1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */,
 				1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */,
+				139E5AE01FF498810016F066 /* ClientViewController.swift in Sources */,
 				139E5AD71FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */,
 				1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */,
 				13F668441FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */,
