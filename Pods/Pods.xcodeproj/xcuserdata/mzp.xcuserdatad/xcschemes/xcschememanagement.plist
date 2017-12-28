@@ -4,12 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FootlessParser.xcscheme</key>
+		<key>FootlessParser-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>NorthLayout.xcscheme</key>
+		<key>FootlessParser-macOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NorthLayout-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NorthLayout-macOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-App-HeartVoice(macOS).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

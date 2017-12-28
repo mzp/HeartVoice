@@ -31,7 +31,8 @@
 		13F668451FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */; };
 		13F668471FF3BBC10078C0F3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668461FF3BBC10078C0F3 /* WatchSession.swift */; };
 		13F668481FF3BBC10078C0F3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F668461FF3BBC10078C0F3 /* WatchSession.swift */; };
-		73B4E24A26726A6ACDF0E3F7 /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */; };
+		53AAEF47F0F946851F63C3DE /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */; };
+		D0F212ED0B62BDF8F0E0DDA4 /* Pods_App_HeartVoice_macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +92,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1332A7441FF3885500470CD7 /* HeartVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1332A7471FF3885500470CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1332A7491FF3885500470CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,14 +122,23 @@
 		13810DE81FF38F2700EB1119 /* Tests(macOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests(macOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13810DEC1FF38F2700EB1119 /* HeartVoiceViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartVoiceViewerTests.swift; sourceTree = "<group>"; };
 		13810DEE1FF38F2700EB1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139E5AD31FF494150016F066 /* HeartVoiceServiceServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartVoiceServiceServer.swift; sourceTree = "<group>"; };
+		139E5AD41FF494150016F066 /* HeartVoiceServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartVoiceServiceClient.swift; sourceTree = "<group>"; };
+		139E5AD51FF494150016F066 /* HeartVoiceServiceBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartVoiceServiceBrowser.swift; sourceTree = "<group>"; };
+		139E5AD61FF494150016F066 /* HeartVoiceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartVoiceService.swift; sourceTree = "<group>"; };
+		139E5ADF1FF498810016F066 /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		13F668361FF39A9F0078C0F3 /* HeartVoiceWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartVoiceWatch Extension.entitlements"; sourceTree = "<group>"; };
 		13F6683B1FF39AFD0078C0F3 /* HeartVoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartVoice.entitlements; sourceTree = "<group>"; };
 		13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		13F668401FF39E1C0078C0F3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartActivity.swift; sourceTree = "<group>"; };
 		13F668461FF3BBC10078C0F3 /* WatchSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
-		1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
-		3B25EFFA5FA602169E0EBB53 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
+		3B28DBBD994BB06434FD1C1C /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
+		71B9A80BD5B44C3D33D78D7D /* Pods-App-HeartVoice(macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice(macOS).release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).release.xcconfig"; sourceTree = "<group>"; };
+		9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice_macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
+		FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice(macOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B4E24A26726A6ACDF0E3F7 /* Pods_App_HeartVoice.framework in Frameworks */,
 				13F6683D1FF39AFD0078C0F3 /* HealthKit.framework in Frameworks */,
+				53AAEF47F0F946851F63C3DE /* Pods_App_HeartVoice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F212ED0B62BDF8F0E0DDA4 /* Pods_App_HeartVoice_macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +227,8 @@
 				1332A7461FF3885500470CD7 /* Sources */,
 				1332A75B1FF3885500470CD7 /* Tests */,
 				1332A7451FF3885500470CD7 /* Products */,
-				40067F4292384F02DA25D3D3 /* Pods */,
 				E05CE3BB0F5EAF7CB0833AFD /* Frameworks */,
+				DE852E473B2AED4BB535EB84 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,11 +345,13 @@
 			path = communication;
 			sourceTree = "<group>";
 		};
-		40067F4292384F02DA25D3D3 /* Pods */ = {
+		DE852E473B2AED4BB535EB84 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */,
-				3B25EFFA5FA602169E0EBB53 /* Pods-App-HeartVoice.release.xcconfig */,
+				3B28DBBD994BB06434FD1C1C /* Pods-App-HeartVoice.debug.xcconfig */,
+				B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */,
+				FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */,
+				71B9A80BD5B44C3D33D78D7D /* Pods-App-HeartVoice(macOS).release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -349,7 +361,8 @@
 			children = (
 				13F668401FF39E1C0078C0F3 /* HealthKit.framework */,
 				13F6683C1FF39AFD0078C0F3 /* HealthKit.framework */,
-				0A12494980AE19B2172E3453 /* Pods_App_HeartVoice.framework */,
+				A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */,
+				9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,14 +374,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1332A7611FF3885500470CD7 /* Build configuration list for PBXNativeTarget "HeartVoice" */;
 			buildPhases = (
-				F155E426D6BB1D532F85B4E9 /* [CP] Check Pods Manifest.lock */,
+				84F3E6876121E37B288D1309 /* [CP] Check Pods Manifest.lock */,
 				13810D861FF38BC200EB1119 /* SwiftLint */,
 				1332A7401FF3885500470CD7 /* Sources */,
 				1332A7411FF3885500470CD7 /* Frameworks */,
 				1332A7421FF3885500470CD7 /* Resources */,
-				DDCCDFE7919EDCB4ABA5231A /* [CP] Embed Pods Frameworks */,
-				53F105C2636C2940A6AD4B77 /* [CP] Copy Pods Resources */,
 				13810DAE1FF38DB700EB1119 /* Embed Watch Content */,
+				DFE8E85FFFA0B619696BF3A0 /* [CP] Embed Pods Frameworks */,
+				D5E3F79DE03BF5E0854EAC4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,10 +451,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13810DF31FF38F2700EB1119 /* Build configuration list for PBXNativeTarget "HeartVoice(macOS)" */;
 			buildPhases = (
+				162B8FD086A8EEB4A2DCC59A /* [CP] Check Pods Manifest.lock */,
 				1320B0AE1FF38FD800EBE913 /* ShellScript */,
 				13810DD31FF38F2700EB1119 /* Sources */,
 				13810DD41FF38F2700EB1119 /* Frameworks */,
 				13810DD51FF38F2700EB1119 /* Resources */,
+				5610B52D3CB861B0D4775378 /* [CP] Embed Pods Frameworks */,
+				7704ECE50FB05081F7FD01B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -635,7 +651,45 @@
 			shellPath = /bin/sh;
 			shellScript = "${SOURCE_ROOT}/Pods/SwiftLint/swiftlint";
 		};
-		53F105C2636C2940A6AD4B77 /* [CP] Copy Pods Resources */ = {
+		162B8FD086A8EEB4A2DCC59A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-HeartVoice(macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5610B52D3CB861B0D4775378 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FootlessParser-macOS/FootlessParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NorthLayout-macOS/NorthLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FootlessParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorthLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7704ECE50FB05081F7FD01B5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -647,30 +701,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS)-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DDCCDFE7919EDCB4ABA5231A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FootlessParser/FootlessParser.framework",
-				"${BUILT_PRODUCTS_DIR}/NorthLayout/NorthLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FootlessParser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorthLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F155E426D6BB1D532F85B4E9 /* [CP] Check Pods Manifest.lock */ = {
+		84F3E6876121E37B288D1309 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -686,6 +720,41 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E3F79DE03BF5E0854EAC4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE8E85FFFA0B619696BF3A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework",
+				"${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FootlessParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorthLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -901,7 +970,7 @@
 		};
 		1332A7621FF3885500470CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E88A973295EBA55A1820569 /* Pods-App-HeartVoice.debug.xcconfig */;
+			baseConfigurationReference = 3B28DBBD994BB06434FD1C1C /* Pods-App-HeartVoice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/iOS/HeartVoice.entitlements;
@@ -918,7 +987,7 @@
 		};
 		1332A7631FF3885500470CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B25EFFA5FA602169E0EBB53 /* Pods-App-HeartVoice.release.xcconfig */;
+			baseConfigurationReference = B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/iOS/HeartVoice.entitlements;
@@ -1043,9 +1112,9 @@
 		};
 		13810DEF1FF38F2700EB1119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Resources/macOS/HeartVoiceViewer.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1061,9 +1130,9 @@
 		};
 		13810DF01FF38F2700EB1119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B9A80BD5B44C3D33D78D7D /* Pods-App-HeartVoice(macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Resources/macOS/HeartVoiceViewer.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

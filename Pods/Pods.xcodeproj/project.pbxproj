@@ -7,163 +7,291 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0375BCEFCD459E314EE0170E54999D17 /* FootlessParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33873AF16900D70BAA53FF452F6DAA80 /* FootlessParser.framework */; };
-		0600D78E4B0C6A1FE0852874A7520DA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3B4560E0ED3E1E17FD6A30634DA236 /* Foundation.framework */; };
-		218C563C127CA329C51D30F1504B34B8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B36F51A3A106666EDA1C6B2BE55DC /* Error.swift */; };
-		28B3DAF84DF9869AFEDAB5253B229BCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC61711989E78772A498900029A17CA /* UIKit.framework */; };
-		3694545DA633184651B2A13D24AD36D1 /* FootlessParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CF463928DC576BB381EB789299B6F0 /* FootlessParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BEB48ED8E5E59120E403630045133AE /* VFL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49A21BABE1B2C5932166F4194241DB /* VFL.swift */; };
-		3C824AAD47DD1B4E9653FBB883288578 /* VFLSyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EB30A39EC517112BBAA6A020020D2A /* VFLSyntax.swift */; };
-		441510F3F80765862F43F48BBC8793F9 /* Pods-App-HeartVoice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB17D5C1891831F86A944ACB2271C4B /* Pods-App-HeartVoice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5679B7449F93DFFAB88F3E56E02E8A4A /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614EBB13FC06D6DB16BE9C51B459ADE7 /* Parsers.swift */; };
-		71015FA498F02B91065BA59B160FAA82 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691F3904330B5665DD69F2415719164 /* Parser.swift */; };
-		84F742B9A656D57C804ED429BAB3CD1A /* FootlessParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11523C3FAA1060CEA83444C53FE3519D /* FootlessParser-dummy.m */; };
-		8650589654010D4EDDFD7441180A8B38 /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C64E555FA6825ABAAD70F9F37925F /* StringParser.swift */; };
-		8946E8AED36136A3BA901326FE3985B6 /* NorthLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E78267581AFA15FCA3C9A55037922A64 /* NorthLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A61F14FEA460569404901468E0040F53 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1905A98681E1B5FCAC15DE5BDAAE29E /* Converters.swift */; };
-		CA6250F4B96F008ED78F5D6F4BCC0997 /* Pods-App-HeartVoice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0336B01FF9046C0CB7361C51747362F /* Pods-App-HeartVoice-dummy.m */; };
-		CDA67E64F1A3C05A92F80AB5B9EF2597 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3B4560E0ED3E1E17FD6A30634DA236 /* Foundation.framework */; };
-		D109C72B3BF2218F046118B6A0A9BB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3B4560E0ED3E1E17FD6A30634DA236 /* Foundation.framework */; };
-		D38A0B8117A934F8D7F617C7F2B9BA06 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51F9929DB3DEA11BE6C75DF804E5C4 /* Extensions.swift */; };
-		E0CF6C7339E2A9BEEBED00DA0F1A1EBE /* NorthLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AAAD91D41AC00DF9DF38CE9ADB1A1C /* NorthLayout-dummy.m */; };
-		E98A2DDEA8E3192B2CAEA3B7E9324D35 /* NorthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE91A4FA2FB22D2083C69450CBFDB3 /* NorthLayout.swift */; };
-		F0CF770305C89D07CD455A17B9AA2798 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388AF746E0671DF1FCEF524783539438 /* Parser+Operators.swift */; };
+		026CBD1D84A7B1227712648B7699E7E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31966201797A6003156ECD5BDE10067 /* Cocoa.framework */; };
+		094BF40F13C8407F0E15F30B3AC7FB39 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889E306733903E1785D0203005FC8BB /* Error.swift */; };
+		0E47C340871C4276148A3FCAF0FDC280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085A304462AF8936EB934A149F4D3F5 /* Foundation.framework */; };
+		1260634EFD78A039260BFBFF9955AACE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31966201797A6003156ECD5BDE10067 /* Cocoa.framework */; };
+		137EAFA6DB5DF9F9BE78DC6B062A5ABE /* NorthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42291517ED10729A7C1B7EABC1275BBF /* NorthLayout.swift */; };
+		15E331A282216BADB3BF3C1A0DAEE65F /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560574AF1E12BC9A71062B3DBCAF9F27 /* Parsers.swift */; };
+		1716DBEB914F21C2A5415C309DAB246A /* FootlessParser-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69878993424ECB797CA21A5179B55EE /* FootlessParser-iOS-dummy.m */; };
+		1992DB185B3DB75CF4FEDC5F0F9944D6 /* NorthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42291517ED10729A7C1B7EABC1275BBF /* NorthLayout.swift */; };
+		2F748A7739816BA3AD7E8D6D89D0A901 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31966201797A6003156ECD5BDE10067 /* Cocoa.framework */; };
+		335DB925C790AB18764E1EE46BA3606A /* FootlessParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A528946E3AB8EA9AF5D9B42C4244B67 /* FootlessParser.framework */; };
+		3888FD767629B2D0D3E9B8914DB06F08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085A304462AF8936EB934A149F4D3F5 /* Foundation.framework */; };
+		395608954283CBBA5B778D78DEBF09A7 /* FootlessParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A528946E3AB8EA9AF5D9B42C4244B67 /* FootlessParser.framework */; };
+		3C31F9D815B78106D637AFBC8BF3B129 /* Pods-App-HeartVoice(macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03A6D7AA8993F9400BAB6E3D367B5B /* Pods-App-HeartVoice(macOS)-dummy.m */; };
+		497195363B38D50E376F496423DC2EEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085A304462AF8936EB934A149F4D3F5 /* Foundation.framework */; };
+		4C40DE7EB02B23F6D3394A1E29F17577 /* FootlessParser-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A67A271EF8D26F6AD65F993E8C29FF /* FootlessParser-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E51B38ECAC437342F2A3E28AC928C4 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B3F7BCF3869CC6E7D093A0BFD15E4 /* Parser+Operators.swift */; };
+		5BB45C0EFC1921AF8E56A1B88F50DA31 /* NorthLayout-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2FDCF3CE3980B735CEDB0CAFF03555 /* NorthLayout-iOS-dummy.m */; };
+		664642AF8A00D4D475233CE958978DCB /* VFL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EABEE811BDC9796D0BEECA6115FC63 /* VFL.swift */; };
+		76DBE0B2F4A1DF6E670AD6ECBB7B09CE /* Pods-App-HeartVoice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA649838DB785D07D46D3FB01813F566 /* Pods-App-HeartVoice-dummy.m */; };
+		7EDC7B07EC1CA964F312C35A6A5706F3 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA2A85E52008BE9CC89842E250FDFD /* Parser.swift */; };
+		7EDD3537B4ACA641AD24907BD4A581F6 /* NorthLayout-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B54389648259F7EB2528041385CDB1 /* NorthLayout-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86639BBE302E46A6782B79D14191A0A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1232008F19937361FDC15FCF87CA4 /* Extensions.swift */; };
+		950D7C7ACEDBAE69DB569A28452008F8 /* VFLSyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60D19FD389155BEEAD2E7C9D23326E /* VFLSyntax.swift */; };
+		9A6076C9162286DF86C33062369C24AC /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB83245D20B8365539A4EA6032B9BF /* StringParser.swift */; };
+		9D0E627E14E07A7279DDF79126E688B8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA2A85E52008BE9CC89842E250FDFD /* Parser.swift */; };
+		9DB95685DD857F1E38C67600F64F13E4 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B3F7BCF3869CC6E7D093A0BFD15E4 /* Parser+Operators.swift */; };
+		9FC40996DFBF094BF3E173B33CC35A72 /* VFLSyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60D19FD389155BEEAD2E7C9D23326E /* VFLSyntax.swift */; };
+		A4D366359B7DE1B1813BF7B88A78F3AB /* FootlessParser-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D1055DE81FCF45350B156823A6217F /* FootlessParser-macOS-dummy.m */; };
+		B240D07865BE06BFA38062347629176C /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB83245D20B8365539A4EA6032B9BF /* StringParser.swift */; };
+		B74B259D9EDBA18AF29C9EAFB5569FAD /* Pods-App-HeartVoice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1597C1B3873D692C92A9441441716AC3 /* Pods-App-HeartVoice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB47CB0677AE6606BCB6E819D73A0830 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889E306733903E1785D0203005FC8BB /* Error.swift */; };
+		C5B204B643A9230DB8239EFCB56A124D /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560574AF1E12BC9A71062B3DBCAF9F27 /* Parsers.swift */; };
+		C5F3AD36B205E01A17D5B281F32E23BE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1232008F19937361FDC15FCF87CA4 /* Extensions.swift */; };
+		CBF77CB8B1E1E66ACAF1C28AAE51E0DF /* FootlessParser-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3C057510AAA996A2EFB7495DD98D89 /* FootlessParser-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEAC0C27BDE07D11029D0282BE190304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9E4DA0A6833D70E33DB58102C6BEE2 /* UIKit.framework */; };
+		E76E47D9D33CDFC2B81AC90C15839569 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D012531F7D32D72DB6D5E523DB46E9B /* Converters.swift */; };
+		EE85F0F2BF3B69608A75833E416E9FD7 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D012531F7D32D72DB6D5E523DB46E9B /* Converters.swift */; };
+		F3F412B7B0F3233DB8A07E2470635D2B /* VFL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EABEE811BDC9796D0BEECA6115FC63 /* VFL.swift */; };
+		F84C16367274B254A98962B1E7A8B2BE /* Pods-App-HeartVoice(macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1142F429924C1A449AC7F8D964C2E1ED /* Pods-App-HeartVoice(macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E814932105B65DE2293A8C89FEA64B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E805FADE81B833C7B779572ECE7FB8 /* AppKit.framework */; };
+		FBE6827028EC5D605B0404AE3F038207 /* NorthLayout-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB672BB6103E2D47AD56CAAB9443B5B8 /* NorthLayout-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD14A319E837F41C17CFC760C8D1FC8F /* NorthLayout-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3578DE31595DD0743E9356D95D74B11D /* NorthLayout-macOS-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		651B2196866C7A2EFFF54F5654DCBCFF /* PBXContainerItemProxy */ = {
+		0F2E6F1D7534DF2DDBD7CDF0AF1041D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 09E6DA3EA133A7B74401F8E518EDE86A;
-			remoteInfo = FootlessParser;
+			remoteGlobalIDString = 1A49F350524078ED44455C4719A62D46;
+			remoteInfo = "FootlessParser-iOS";
 		};
-		9B9662BE3926BE9342079BC3801A38DF /* PBXContainerItemProxy */ = {
+		13FDCD786A37883DE0B9D2B859279B6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D671F5CDBECD38A7172F35C27C579D8A;
-			remoteInfo = NorthLayout;
+			remoteGlobalIDString = F8A5717BE0BFB15B81A6C5FFE3E437EA;
+			remoteInfo = "FootlessParser-macOS";
 		};
-		A380881844C74C0C0DBABC1AACF653E0 /* PBXContainerItemProxy */ = {
+		55D524B0E3F702B4DEB6D2C0D3008A48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 09E6DA3EA133A7B74401F8E518EDE86A;
-			remoteInfo = FootlessParser;
+			remoteGlobalIDString = F8A5717BE0BFB15B81A6C5FFE3E437EA;
+			remoteInfo = "FootlessParser-macOS";
+		};
+		86883E84066544A02ADF9B40E9B8A826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D3E34B04F1A0CB5682E882C09067D2;
+			remoteInfo = "NorthLayout-iOS";
+		};
+		A937783EC52901A548F84BF6ED8DD7EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575F857CDA776CB680E437286FEA826F;
+			remoteInfo = "NorthLayout-macOS";
+		};
+		B4D1C29E88A575685BA57A89B3704D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A49F350524078ED44455C4719A62D46;
+			remoteInfo = "FootlessParser-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0691F3904330B5665DD69F2415719164 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
-		07CF463928DC576BB381EB789299B6F0 /* FootlessParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FootlessParser-umbrella.h"; sourceTree = "<group>"; };
-		09C33496A484D0D05E67F6D9DC849D40 /* NorthLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NorthLayout-prefix.pch"; sourceTree = "<group>"; };
-		0B5AB0BFCB994A2209B6939A2F2D2AE1 /* FootlessParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FootlessParser.framework; path = FootlessParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11523C3FAA1060CEA83444C53FE3519D /* FootlessParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FootlessParser-dummy.m"; sourceTree = "<group>"; };
-		1B81C8373420B06C449624051AEDA829 /* NorthLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NorthLayout.xcconfig; sourceTree = "<group>"; };
-		222C9A3DB1F1C43C0162C5EDC4BEC29D /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
-		3194AD993A87C3B3471EDBDC8B4EFB67 /* FootlessParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FootlessParser.xcconfig; sourceTree = "<group>"; };
-		33873AF16900D70BAA53FF452F6DAA80 /* FootlessParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FootlessParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		388AF746E0671DF1FCEF524783539438 /* Parser+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Parser+Operators.swift"; path = "Sources/Parser+Operators.swift"; sourceTree = "<group>"; };
-		3C7D8083DAD88CBE0C55E02E1D257D91 /* NorthLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NorthLayout.framework; path = NorthLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E3B4560E0ED3E1E17FD6A30634DA236 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42B397AAEDBD6BEB632897D992E8C2B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4466B26C7319EF032DC74B0BFBF15E31 /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
-		4CAE91A4FA2FB22D2083C69450CBFDB3 /* NorthLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthLayout.swift; path = Classes/NorthLayout.swift; sourceTree = "<group>"; };
-		575B36F51A3A106666EDA1C6B2BE55DC /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
-		5FBCCCF66DD493814A9A5B313B8231DA /* Pods-App-HeartVoice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-HeartVoice-acknowledgements.markdown"; sourceTree = "<group>"; };
-		614EBB13FC06D6DB16BE9C51B459ADE7 /* Parsers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parsers.swift; path = Sources/Parsers.swift; sourceTree = "<group>"; };
-		61B0979E136D54FF267615188EB24EA3 /* Pods-App-HeartVoice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-App-HeartVoice.modulemap"; sourceTree = "<group>"; };
-		651952CDA4F981CD833ECC84B56C485F /* Pods-App-HeartVoice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-HeartVoice-acknowledgements.plist"; sourceTree = "<group>"; };
-		6A8D4D31AFE114EABDBBDBD49097B99E /* FootlessParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FootlessParser-prefix.pch"; sourceTree = "<group>"; };
-		7CC5E4FD76ACF2C8D098C52FD4878EFD /* Pods-App-HeartVoice-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-HeartVoice-resources.sh"; sourceTree = "<group>"; };
-		8BC4C3F47CB69511279094B72318307B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0085A304462AF8936EB934A149F4D3F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		00BB50622F243B2E44F048FE138BB794 /* Pods-App-HeartVoice(macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-HeartVoice(macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		04B54389648259F7EB2528041385CDB1 /* NorthLayout-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NorthLayout-macOS-umbrella.h"; path = "../NorthLayout-macOS/NorthLayout-macOS-umbrella.h"; sourceTree = "<group>"; };
+		0EB32CB10D5386EEEAD3CE356B75EA14 /* Pods-App-HeartVoice(macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-HeartVoice(macOS).release.xcconfig"; sourceTree = "<group>"; };
+		1142F429924C1A449AC7F8D964C2E1ED /* Pods-App-HeartVoice(macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-HeartVoice(macOS)-umbrella.h"; sourceTree = "<group>"; };
+		14D3A41669FC4C44D649DBFAF7264350 /* Pods-App-HeartVoice(macOS)-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-HeartVoice(macOS)-resources.sh"; sourceTree = "<group>"; };
+		14FD9C250B797F99133B240C9C37F6D5 /* Pods-App-HeartVoice(macOS)-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-HeartVoice(macOS)-frameworks.sh"; sourceTree = "<group>"; };
+		1597C1B3873D692C92A9441441716AC3 /* Pods-App-HeartVoice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-HeartVoice-umbrella.h"; sourceTree = "<group>"; };
+		1D012531F7D32D72DB6D5E523DB46E9B /* Converters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Converters.swift; path = Sources/Converters.swift; sourceTree = "<group>"; };
+		1F4595CDFB817CC8DB7AE16E31D8A531 /* NorthLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NorthLayout.framework; path = "NorthLayout-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267D26DCB8D866B52F9F274D4F78C30B /* NorthLayout-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "NorthLayout-macOS.modulemap"; path = "../NorthLayout-macOS/NorthLayout-macOS.modulemap"; sourceTree = "<group>"; };
+		2B2B3F7BCF3869CC6E7D093A0BFD15E4 /* Parser+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Parser+Operators.swift"; path = "Sources/Parser+Operators.swift"; sourceTree = "<group>"; };
+		2BFA2A85E52008BE9CC89842E250FDFD /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		31E805FADE81B833C7B779572ECE7FB8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		3578DE31595DD0743E9356D95D74B11D /* NorthLayout-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NorthLayout-macOS-dummy.m"; path = "../NorthLayout-macOS/NorthLayout-macOS-dummy.m"; sourceTree = "<group>"; };
+		36D06DB84BEAA517C7FD1FF8B73889CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A39571BC386AE04CA3E5F072417B98F /* FootlessParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FootlessParser.framework; path = "FootlessParser-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A528946E3AB8EA9AF5D9B42C4244B67 /* FootlessParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FootlessParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F60D19FD389155BEEAD2E7C9D23326E /* VFLSyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VFLSyntax.swift; path = Classes/VFLSyntax.swift; sourceTree = "<group>"; };
+		42291517ED10729A7C1B7EABC1275BBF /* NorthLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NorthLayout.swift; path = Classes/NorthLayout.swift; sourceTree = "<group>"; };
+		4AA325B52E38134616EC374F6CC35D1B /* NorthLayout-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NorthLayout-iOS.xcconfig"; sourceTree = "<group>"; };
+		517CB37470420562E5C43B79ECD53599 /* FootlessParser-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FootlessParser-iOS.xcconfig"; sourceTree = "<group>"; };
+		560574AF1E12BC9A71062B3DBCAF9F27 /* Parsers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parsers.swift; path = Sources/Parsers.swift; sourceTree = "<group>"; };
+		5A0701E2CCD0D7695BB49D548124D223 /* FootlessParser-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FootlessParser-iOS-prefix.pch"; sourceTree = "<group>"; };
+		5FB56D8F429A207FEED79CE566AC2E0F /* NorthLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NorthLayout.framework; path = "NorthLayout-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61EABEE811BDC9796D0BEECA6115FC63 /* VFL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VFL.swift; path = Classes/VFL.swift; sourceTree = "<group>"; };
+		6997FE5E84EFF0F3A0880859B12B2CE3 /* Pods-App-HeartVoice-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-HeartVoice-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6DD03E049A7522628BE86D13541599DD /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_HeartVoice.framework; path = "Pods-App-HeartVoice.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD2D8875F4BADD75AB7F5CB18D1F109 /* NorthLayout-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "NorthLayout-iOS.modulemap"; sourceTree = "<group>"; };
+		71BAF2800E9F5B8D0E10E0A73640C809 /* FootlessParser-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FootlessParser-macOS.xcconfig"; path = "../FootlessParser-macOS/FootlessParser-macOS.xcconfig"; sourceTree = "<group>"; };
+		73D1055DE81FCF45350B156823A6217F /* FootlessParser-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FootlessParser-macOS-dummy.m"; path = "../FootlessParser-macOS/FootlessParser-macOS-dummy.m"; sourceTree = "<group>"; };
+		7E2FDCF3CE3980B735CEDB0CAFF03555 /* NorthLayout-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NorthLayout-iOS-dummy.m"; sourceTree = "<group>"; };
+		800044AD90C948172627EAEA0CB14344 /* Pods-App-HeartVoice(macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-App-HeartVoice(macOS).modulemap"; sourceTree = "<group>"; };
+		837FD1E59BB3E8C37C5BA190902E15E5 /* NorthLayout-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NorthLayout-macOS-prefix.pch"; path = "../NorthLayout-macOS/NorthLayout-macOS-prefix.pch"; sourceTree = "<group>"; };
+		8705CDB812F85B7BDC009DF933919DF2 /* FootlessParser-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "FootlessParser-macOS.modulemap"; path = "../FootlessParser-macOS/FootlessParser-macOS.modulemap"; sourceTree = "<group>"; };
+		87BB885A81CE60B2B7AF2FCC3AE8BBDE /* FootlessParser-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "FootlessParser-iOS.modulemap"; sourceTree = "<group>"; };
+		8A26ECA526EF97D84FA2B4041CFEB6BA /* Pods-App-HeartVoice(macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-HeartVoice(macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B03A6D7AA8993F9400BAB6E3D367B5B /* Pods-App-HeartVoice(macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-HeartVoice(macOS)-dummy.m"; sourceTree = "<group>"; };
+		8BC52B9A23F6723F8A72D5FB5C2C596C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0336B01FF9046C0CB7361C51747362F /* Pods-App-HeartVoice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-HeartVoice-dummy.m"; sourceTree = "<group>"; };
-		AE0C64E555FA6825ABAAD70F9F37925F /* StringParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringParser.swift; path = Sources/StringParser.swift; sourceTree = "<group>"; };
-		B1EB30A39EC517112BBAA6A020020D2A /* VFLSyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VFLSyntax.swift; path = Classes/VFLSyntax.swift; sourceTree = "<group>"; };
-		BC642346A01A54C4F35F73080F810A4A /* Pods-App-HeartVoice-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-HeartVoice-frameworks.sh"; sourceTree = "<group>"; };
-		BDB17D5C1891831F86A944ACB2271C4B /* Pods-App-HeartVoice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-HeartVoice-umbrella.h"; sourceTree = "<group>"; };
-		C6C77E7EA71309F59B9461C85DA8E5DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB49A21BABE1B2C5932166F4194241DB /* VFL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VFL.swift; path = Classes/VFL.swift; sourceTree = "<group>"; };
-		CBC61711989E78772A498900029A17CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		CD4DBC674C5F58F2A837A5469CB78C71 /* FootlessParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FootlessParser.modulemap; sourceTree = "<group>"; };
-		CE51F9929DB3DEA11BE6C75DF804E5C4 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
-		D1905A98681E1B5FCAC15DE5BDAAE29E /* Converters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Converters.swift; path = Sources/Converters.swift; sourceTree = "<group>"; };
-		DFA37416CD637B9832EB6FE17B68324F /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_HeartVoice.framework; path = "Pods-App-HeartVoice.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2AAAD91D41AC00DF9DF38CE9ADB1A1C /* NorthLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NorthLayout-dummy.m"; sourceTree = "<group>"; };
-		E78267581AFA15FCA3C9A55037922A64 /* NorthLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NorthLayout-umbrella.h"; sourceTree = "<group>"; };
-		FD27365B82193A7E410C32659B3C15DB /* NorthLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NorthLayout.modulemap; sourceTree = "<group>"; };
+		941DA717B10E5A34102DA36C7AF30E93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAB83245D20B8365539A4EA6032B9BF /* StringParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringParser.swift; path = Sources/StringParser.swift; sourceTree = "<group>"; };
+		A1466DC857DEC68BB5950A237FBC1F42 /* Pods_App_HeartVoice_macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_App_HeartVoice_macOS_.framework; path = "Pods-App-HeartVoice(macOS).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79B47B9BFA479FD49D4C014B88071E3 /* FootlessParser-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FootlessParser-macOS-prefix.pch"; path = "../FootlessParser-macOS/FootlessParser-macOS-prefix.pch"; sourceTree = "<group>"; };
+		A93C55EA6AC7CA68AC3EA7E58CCAF94C /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
+		B01DDE92F8D082FCA602885B3CFC89F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B1232008F19937361FDC15FCF87CA4 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		C03B52CBE34E83D95E9B4785F104A80C /* NorthLayout-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "NorthLayout-macOS.xcconfig"; path = "../NorthLayout-macOS/NorthLayout-macOS.xcconfig"; sourceTree = "<group>"; };
+		C1D06787DAE1C1B2F860E6E556B41B65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../FootlessParser-macOS/Info.plist"; sourceTree = "<group>"; };
+		C31966201797A6003156ECD5BDE10067 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C4667A1DFA5D5629B63CED6489D31C2E /* FootlessParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FootlessParser.framework; path = "FootlessParser-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A67A271EF8D26F6AD65F993E8C29FF /* FootlessParser-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FootlessParser-macOS-umbrella.h"; path = "../FootlessParser-macOS/FootlessParser-macOS-umbrella.h"; sourceTree = "<group>"; };
+		C95CEC8E84350962E655B0CD158FD04C /* Pods-App-HeartVoice-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-HeartVoice-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9C7E1F10AE7610157B314BA4B49E220 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../NorthLayout-macOS/Info.plist"; sourceTree = "<group>"; };
+		D1BB2669C41A2EB7B2A16BFA380E05D6 /* NorthLayout-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NorthLayout-iOS-prefix.pch"; sourceTree = "<group>"; };
+		D5F644A63FA3C6A80C698D047B86044A /* Pods-App-HeartVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-HeartVoice.debug.xcconfig"; sourceTree = "<group>"; };
+		D69878993424ECB797CA21A5179B55EE /* FootlessParser-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FootlessParser-iOS-dummy.m"; sourceTree = "<group>"; };
+		D889E306733903E1785D0203005FC8BB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		DA9E4DA0A6833D70E33DB58102C6BEE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB672BB6103E2D47AD56CAAB9443B5B8 /* NorthLayout-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NorthLayout-iOS-umbrella.h"; sourceTree = "<group>"; };
+		EA649838DB785D07D46D3FB01813F566 /* Pods-App-HeartVoice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-HeartVoice-dummy.m"; sourceTree = "<group>"; };
+		EC6F9CF97E3ED55F5FF2F8917D3A832F /* Pods-App-HeartVoice(macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App-HeartVoice(macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		EEF07F28D87F632C11ACC7C5263C2349 /* Pods-App-HeartVoice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-App-HeartVoice.modulemap"; sourceTree = "<group>"; };
+		EF3C057510AAA996A2EFB7495DD98D89 /* FootlessParser-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FootlessParser-iOS-umbrella.h"; sourceTree = "<group>"; };
+		FA51E79F2D2E8412018C8B50BF01C16F /* Pods-App-HeartVoice-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-HeartVoice-resources.sh"; sourceTree = "<group>"; };
+		FFE35E6E528BFC01F5D65231F824678E /* Pods-App-HeartVoice-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-App-HeartVoice-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C87739B5CBEC2FD3BD5AFE1B8EBB48A /* Frameworks */ = {
+		4FC5CA04F679EB182F5660BDA12DB65D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0375BCEFCD459E314EE0170E54999D17 /* FootlessParser.framework in Frameworks */,
-				D109C72B3BF2218F046118B6A0A9BB13 /* Foundation.framework in Frameworks */,
-				28B3DAF84DF9869AFEDAB5253B229BCF /* UIKit.framework in Frameworks */,
+				497195363B38D50E376F496423DC2EEE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA9725DD1CFD930DB253992C241E686F /* Frameworks */ = {
+		6DAAA99503E3C0B12FD5213D9A321E50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0600D78E4B0C6A1FE0852874A7520DA6 /* Foundation.framework in Frameworks */,
+				1260634EFD78A039260BFBFF9955AACE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F672549B1B03C3E121DE3032B130257D /* Frameworks */ = {
+		94B2E58CCB0C202B486BBD035581F2C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA67E64F1A3C05A92F80AB5B9EF2597 /* Foundation.framework in Frameworks */,
+				026CBD1D84A7B1227712648B7699E7E4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B939A35B4C2081C5D761947AC96034A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E814932105B65DE2293A8C89FEA64B /* AppKit.framework in Frameworks */,
+				2F748A7739816BA3AD7E8D6D89D0A901 /* Cocoa.framework in Frameworks */,
+				335DB925C790AB18764E1EE46BA3606A /* FootlessParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB43622543336FA61B24FDFEB077682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395608954283CBBA5B778D78DEBF09A7 /* FootlessParser.framework in Frameworks */,
+				3888FD767629B2D0D3E9B8914DB06F08 /* Foundation.framework in Frameworks */,
+				DEAC0C27BDE07D11029D0282BE190304 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98B464D71C7AF651B29356800B12708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E47C340871C4276148A3FCAF0FDC280 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16B0937D9685AC69CE52552CF78C1D58 /* NorthLayout */ = {
+		115D277A8E5326B0B85F39C45490E794 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4CAE91A4FA2FB22D2083C69450CBFDB3 /* NorthLayout.swift */,
-				CB49A21BABE1B2C5932166F4194241DB /* VFL.swift */,
-				B1EB30A39EC517112BBAA6A020020D2A /* VFLSyntax.swift */,
-				98EECAE8F27CAD3CEEE391CE1D3C39B6 /* Support Files */,
+				36D06DB84BEAA517C7FD1FF8B73889CE /* Info.plist */,
+				C9C7E1F10AE7610157B314BA4B49E220 /* Info.plist */,
+				6FD2D8875F4BADD75AB7F5CB18D1F109 /* NorthLayout-iOS.modulemap */,
+				4AA325B52E38134616EC374F6CC35D1B /* NorthLayout-iOS.xcconfig */,
+				7E2FDCF3CE3980B735CEDB0CAFF03555 /* NorthLayout-iOS-dummy.m */,
+				D1BB2669C41A2EB7B2A16BFA380E05D6 /* NorthLayout-iOS-prefix.pch */,
+				DB672BB6103E2D47AD56CAAB9443B5B8 /* NorthLayout-iOS-umbrella.h */,
+				267D26DCB8D866B52F9F274D4F78C30B /* NorthLayout-macOS.modulemap */,
+				C03B52CBE34E83D95E9B4785F104A80C /* NorthLayout-macOS.xcconfig */,
+				3578DE31595DD0743E9356D95D74B11D /* NorthLayout-macOS-dummy.m */,
+				837FD1E59BB3E8C37C5BA190902E15E5 /* NorthLayout-macOS-prefix.pch */,
+				04B54389648259F7EB2528041385CDB1 /* NorthLayout-macOS-umbrella.h */,
 			);
-			name = NorthLayout;
-			path = NorthLayout;
+			name = "Support Files";
+			path = "../Target Support Files/NorthLayout-iOS";
+			sourceTree = "<group>";
+		};
+		18097469822C45F384B894E82C6F600F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0085A304462AF8936EB934A149F4D3F5 /* Foundation.framework */,
+				DA9E4DA0A6833D70E33DB58102C6BEE2 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		1E29C415E7F5BD405E1BF23253F87E3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E7C197F8A718AADC9D904F5591BBDA58 /* FootlessParser */,
-				16B0937D9685AC69CE52552CF78C1D58 /* NorthLayout */,
+				1E91731085D94403440BB43BC012DD78 /* FootlessParser */,
+				A39B3DA1F8BE116400A1A59DA3116CD6 /* NorthLayout */,
 				65530D6F036D9811E274FFD60004077E /* SwiftLint */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		47A60E14E897AC97EB6C75A5044A8A0E /* iOS */ = {
+		1E91731085D94403440BB43BC012DD78 /* FootlessParser */ = {
 			isa = PBXGroup;
 			children = (
-				3E3B4560E0ED3E1E17FD6A30634DA236 /* Foundation.framework */,
-				CBC61711989E78772A498900029A17CA /* UIKit.framework */,
+				1D012531F7D32D72DB6D5E523DB46E9B /* Converters.swift */,
+				D889E306733903E1785D0203005FC8BB /* Error.swift */,
+				B3B1232008F19937361FDC15FCF87CA4 /* Extensions.swift */,
+				2BFA2A85E52008BE9CC89842E250FDFD /* Parser.swift */,
+				2B2B3F7BCF3869CC6E7D093A0BFD15E4 /* Parser+Operators.swift */,
+				560574AF1E12BC9A71062B3DBCAF9F27 /* Parsers.swift */,
+				9EAB83245D20B8365539A4EA6032B9BF /* StringParser.swift */,
+				996F3C58122BF73DBF6EBB4FEBE8BFD4 /* Support Files */,
 			);
-			name = iOS;
+			name = FootlessParser;
+			path = FootlessParser;
 			sourceTree = "<group>";
 		};
-		5B6E531D7672ADD16D417A6AADAABF81 /* Frameworks */ = {
+		5F946521675C2D6AD2D31EFAEC157D07 /* Pods-App-HeartVoice */ = {
 			isa = PBXGroup;
 			children = (
-				33873AF16900D70BAA53FF452F6DAA80 /* FootlessParser.framework */,
-				47A60E14E897AC97EB6C75A5044A8A0E /* iOS */,
+				B01DDE92F8D082FCA602885B3CFC89F0 /* Info.plist */,
+				EEF07F28D87F632C11ACC7C5263C2349 /* Pods-App-HeartVoice.modulemap */,
+				6997FE5E84EFF0F3A0880859B12B2CE3 /* Pods-App-HeartVoice-acknowledgements.markdown */,
+				C95CEC8E84350962E655B0CD158FD04C /* Pods-App-HeartVoice-acknowledgements.plist */,
+				EA649838DB785D07D46D3FB01813F566 /* Pods-App-HeartVoice-dummy.m */,
+				FFE35E6E528BFC01F5D65231F824678E /* Pods-App-HeartVoice-frameworks.sh */,
+				FA51E79F2D2E8412018C8B50BF01C16F /* Pods-App-HeartVoice-resources.sh */,
+				1597C1B3873D692C92A9441441716AC3 /* Pods-App-HeartVoice-umbrella.h */,
+				D5F644A63FA3C6A80C698D047B86044A /* Pods-App-HeartVoice.debug.xcconfig */,
+				A93C55EA6AC7CA68AC3EA7E58CCAF94C /* Pods-App-HeartVoice.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-App-HeartVoice";
+			path = "Target Support Files/Pods-App-HeartVoice";
 			sourceTree = "<group>";
 		};
 		65530D6F036D9811E274FFD60004077E /* SwiftLint */ = {
@@ -174,179 +302,268 @@
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		6640DF890A5D08CC57B004F027F06B64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5B6E531D7672ADD16D417A6AADAABF81 /* Frameworks */,
-				1E29C415E7F5BD405E1BF23253F87E3E /* Pods */,
-				DC7B3C0ACBCEC2475BD05526384DFB15 /* Products */,
-				85E512110D9682483F141D08F889CC76 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		85E512110D9682483F141D08F889CC76 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FCC0B3621E61022EC915A396DA91C67D /* Pods-App-HeartVoice */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		98EECAE8F27CAD3CEEE391CE1D3C39B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				42B397AAEDBD6BEB632897D992E8C2B8 /* Info.plist */,
-				FD27365B82193A7E410C32659B3C15DB /* NorthLayout.modulemap */,
-				1B81C8373420B06C449624051AEDA829 /* NorthLayout.xcconfig */,
-				E2AAAD91D41AC00DF9DF38CE9ADB1A1C /* NorthLayout-dummy.m */,
-				09C33496A484D0D05E67F6D9DC849D40 /* NorthLayout-prefix.pch */,
-				E78267581AFA15FCA3C9A55037922A64 /* NorthLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NorthLayout";
-			sourceTree = "<group>";
-		};
-		D6502CB03C627F3ABBCD8DE02FBB057D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD4DBC674C5F58F2A837A5469CB78C71 /* FootlessParser.modulemap */,
-				3194AD993A87C3B3471EDBDC8B4EFB67 /* FootlessParser.xcconfig */,
-				11523C3FAA1060CEA83444C53FE3519D /* FootlessParser-dummy.m */,
-				6A8D4D31AFE114EABDBBDBD49097B99E /* FootlessParser-prefix.pch */,
-				07CF463928DC576BB381EB789299B6F0 /* FootlessParser-umbrella.h */,
-				C6C77E7EA71309F59B9461C85DA8E5DC /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FootlessParser";
-			sourceTree = "<group>";
-		};
-		DC7B3C0ACBCEC2475BD05526384DFB15 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0B5AB0BFCB994A2209B6939A2F2D2AE1 /* FootlessParser.framework */,
-				3C7D8083DAD88CBE0C55E02E1D257D91 /* NorthLayout.framework */,
-				DFA37416CD637B9832EB6FE17B68324F /* Pods_App_HeartVoice.framework */,
+				3A39571BC386AE04CA3E5F072417B98F /* FootlessParser.framework */,
+				C4667A1DFA5D5629B63CED6489D31C2E /* FootlessParser.framework */,
+				1F4595CDFB817CC8DB7AE16E31D8A531 /* NorthLayout.framework */,
+				5FB56D8F429A207FEED79CE566AC2E0F /* NorthLayout.framework */,
+				6DD03E049A7522628BE86D13541599DD /* Pods_App_HeartVoice.framework */,
+				A1466DC857DEC68BB5950A237FBC1F42 /* Pods_App_HeartVoice_macOS_.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7C197F8A718AADC9D904F5591BBDA58 /* FootlessParser */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				D1905A98681E1B5FCAC15DE5BDAAE29E /* Converters.swift */,
-				575B36F51A3A106666EDA1C6B2BE55DC /* Error.swift */,
-				CE51F9929DB3DEA11BE6C75DF804E5C4 /* Extensions.swift */,
-				0691F3904330B5665DD69F2415719164 /* Parser.swift */,
-				388AF746E0671DF1FCEF524783539438 /* Parser+Operators.swift */,
-				614EBB13FC06D6DB16BE9C51B459ADE7 /* Parsers.swift */,
-				AE0C64E555FA6825ABAAD70F9F37925F /* StringParser.swift */,
-				D6502CB03C627F3ABBCD8DE02FBB057D /* Support Files */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FF602CCD062AF8071F1BE8C4E763856F /* Frameworks */,
+				1E29C415E7F5BD405E1BF23253F87E3E /* Pods */,
+				6640DF890A5D08CC57B004F027F06B64 /* Products */,
+				A9D5EE8C40C82B1F859409C114FB1104 /* Targets Support Files */,
 			);
-			name = FootlessParser;
-			path = FootlessParser;
 			sourceTree = "<group>";
 		};
-		FCC0B3621E61022EC915A396DA91C67D /* Pods-App-HeartVoice */ = {
+		996F3C58122BF73DBF6EBB4FEBE8BFD4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BC4C3F47CB69511279094B72318307B /* Info.plist */,
-				61B0979E136D54FF267615188EB24EA3 /* Pods-App-HeartVoice.modulemap */,
-				5FBCCCF66DD493814A9A5B313B8231DA /* Pods-App-HeartVoice-acknowledgements.markdown */,
-				651952CDA4F981CD833ECC84B56C485F /* Pods-App-HeartVoice-acknowledgements.plist */,
-				A0336B01FF9046C0CB7361C51747362F /* Pods-App-HeartVoice-dummy.m */,
-				BC642346A01A54C4F35F73080F810A4A /* Pods-App-HeartVoice-frameworks.sh */,
-				7CC5E4FD76ACF2C8D098C52FD4878EFD /* Pods-App-HeartVoice-resources.sh */,
-				BDB17D5C1891831F86A944ACB2271C4B /* Pods-App-HeartVoice-umbrella.h */,
-				4466B26C7319EF032DC74B0BFBF15E31 /* Pods-App-HeartVoice.debug.xcconfig */,
-				222C9A3DB1F1C43C0162C5EDC4BEC29D /* Pods-App-HeartVoice.release.xcconfig */,
+				87BB885A81CE60B2B7AF2FCC3AE8BBDE /* FootlessParser-iOS.modulemap */,
+				517CB37470420562E5C43B79ECD53599 /* FootlessParser-iOS.xcconfig */,
+				D69878993424ECB797CA21A5179B55EE /* FootlessParser-iOS-dummy.m */,
+				5A0701E2CCD0D7695BB49D548124D223 /* FootlessParser-iOS-prefix.pch */,
+				EF3C057510AAA996A2EFB7495DD98D89 /* FootlessParser-iOS-umbrella.h */,
+				8705CDB812F85B7BDC009DF933919DF2 /* FootlessParser-macOS.modulemap */,
+				71BAF2800E9F5B8D0E10E0A73640C809 /* FootlessParser-macOS.xcconfig */,
+				73D1055DE81FCF45350B156823A6217F /* FootlessParser-macOS-dummy.m */,
+				A79B47B9BFA479FD49D4C014B88071E3 /* FootlessParser-macOS-prefix.pch */,
+				C6A67A271EF8D26F6AD65F993E8C29FF /* FootlessParser-macOS-umbrella.h */,
+				C1D06787DAE1C1B2F860E6E556B41B65 /* Info.plist */,
+				8BC52B9A23F6723F8A72D5FB5C2C596C /* Info.plist */,
 			);
-			name = "Pods-App-HeartVoice";
-			path = "Target Support Files/Pods-App-HeartVoice";
+			name = "Support Files";
+			path = "../Target Support Files/FootlessParser-iOS";
+			sourceTree = "<group>";
+		};
+		9AECDB10C20FF71E8E9BF161406A593A /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				31E805FADE81B833C7B779572ECE7FB8 /* AppKit.framework */,
+				C31966201797A6003156ECD5BDE10067 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		A39B3DA1F8BE116400A1A59DA3116CD6 /* NorthLayout */ = {
+			isa = PBXGroup;
+			children = (
+				42291517ED10729A7C1B7EABC1275BBF /* NorthLayout.swift */,
+				61EABEE811BDC9796D0BEECA6115FC63 /* VFL.swift */,
+				3F60D19FD389155BEEAD2E7C9D23326E /* VFLSyntax.swift */,
+				115D277A8E5326B0B85F39C45490E794 /* Support Files */,
+			);
+			name = NorthLayout;
+			path = NorthLayout;
+			sourceTree = "<group>";
+		};
+		A9D5EE8C40C82B1F859409C114FB1104 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F946521675C2D6AD2D31EFAEC157D07 /* Pods-App-HeartVoice */,
+				E7504CAC95E0B6AF638D2761366B3E04 /* Pods-App-HeartVoice(macOS) */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E7504CAC95E0B6AF638D2761366B3E04 /* Pods-App-HeartVoice(macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				941DA717B10E5A34102DA36C7AF30E93 /* Info.plist */,
+				800044AD90C948172627EAEA0CB14344 /* Pods-App-HeartVoice(macOS).modulemap */,
+				8A26ECA526EF97D84FA2B4041CFEB6BA /* Pods-App-HeartVoice(macOS)-acknowledgements.markdown */,
+				00BB50622F243B2E44F048FE138BB794 /* Pods-App-HeartVoice(macOS)-acknowledgements.plist */,
+				8B03A6D7AA8993F9400BAB6E3D367B5B /* Pods-App-HeartVoice(macOS)-dummy.m */,
+				14FD9C250B797F99133B240C9C37F6D5 /* Pods-App-HeartVoice(macOS)-frameworks.sh */,
+				14D3A41669FC4C44D649DBFAF7264350 /* Pods-App-HeartVoice(macOS)-resources.sh */,
+				1142F429924C1A449AC7F8D964C2E1ED /* Pods-App-HeartVoice(macOS)-umbrella.h */,
+				EC6F9CF97E3ED55F5FF2F8917D3A832F /* Pods-App-HeartVoice(macOS).debug.xcconfig */,
+				0EB32CB10D5386EEEAD3CE356B75EA14 /* Pods-App-HeartVoice(macOS).release.xcconfig */,
+			);
+			name = "Pods-App-HeartVoice(macOS)";
+			path = "Target Support Files/Pods-App-HeartVoice(macOS)";
+			sourceTree = "<group>";
+		};
+		FF602CCD062AF8071F1BE8C4E763856F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A528946E3AB8EA9AF5D9B42C4244B67 /* FootlessParser.framework */,
+				18097469822C45F384B894E82C6F600F /* iOS */,
+				9AECDB10C20FF71E8E9BF161406A593A /* OS X */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5C8F1D8686D069D434A94654C22535A0 /* Headers */ = {
+		23D7348772F6031A90DED13B74E4621C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441510F3F80765862F43F48BBC8793F9 /* Pods-App-HeartVoice-umbrella.h in Headers */,
+				B74B259D9EDBA18AF29C9EAFB5569FAD /* Pods-App-HeartVoice-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		852B996404F126BFDE4E2A4F0B9AC0FA /* Headers */ = {
+		25C8743809499E6BC28AA22D8B8CD1F4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8946E8AED36136A3BA901326FE3985B6 /* NorthLayout-umbrella.h in Headers */,
+				F84C16367274B254A98962B1E7A8B2BE /* Pods-App-HeartVoice(macOS)-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED68B5E05EF9C5209CC1B4DC766119B8 /* Headers */ = {
+		B2FAFC9FD1DC7D51A26AC868FA21D3B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3694545DA633184651B2A13D24AD36D1 /* FootlessParser-umbrella.h in Headers */,
+				4C40DE7EB02B23F6D3394A1E29F17577 /* FootlessParser-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F2626A8F2AAF5FEE3DFAE4B3C14D67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF77CB8B1E1E66ACAF1C28AAE51E0DF /* FootlessParser-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E410C53D207BC7DA3706ED91ED5B1D73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDD3537B4ACA641AD24907BD4A581F6 /* NorthLayout-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3FC26E4A17EBE55756C2DD2107F65E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE6827028EC5D605B0404AE3F038207 /* NorthLayout-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		09E6DA3EA133A7B74401F8E518EDE86A /* FootlessParser */ = {
+		1A49F350524078ED44455C4719A62D46 /* FootlessParser-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88A7646A107A0C68D3519EF607EC4B92 /* Build configuration list for PBXNativeTarget "FootlessParser" */;
+			buildConfigurationList = 8ACAB8B61B97C759DFB58A6788787C09 /* Build configuration list for PBXNativeTarget "FootlessParser-iOS" */;
 			buildPhases = (
-				83DAB898263A475C5372824052DEAFE7 /* Sources */,
-				F672549B1B03C3E121DE3032B130257D /* Frameworks */,
-				ED68B5E05EF9C5209CC1B4DC766119B8 /* Headers */,
+				5F2CB222D8847B1B41D0F6E031529EE2 /* Sources */,
+				4FC5CA04F679EB182F5660BDA12DB65D /* Frameworks */,
+				D1F2626A8F2AAF5FEE3DFAE4B3C14D67 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FootlessParser;
-			productName = FootlessParser;
-			productReference = 0B5AB0BFCB994A2209B6939A2F2D2AE1 /* FootlessParser.framework */;
+			name = "FootlessParser-iOS";
+			productName = "FootlessParser-iOS";
+			productReference = 3A39571BC386AE04CA3E5F072417B98F /* FootlessParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		45B13F159D6AF790B4EAD4C7BE7399A0 /* Pods-App-HeartVoice */ = {
+		575F857CDA776CB680E437286FEA826F /* NorthLayout-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DED9AA8B26F59636BCF09891E088AAA3 /* Build configuration list for PBXNativeTarget "Pods-App-HeartVoice" */;
+			buildConfigurationList = BAB148D0A3813A193C11F5097433DB14 /* Build configuration list for PBXNativeTarget "NorthLayout-macOS" */;
 			buildPhases = (
-				574492B1DF7F3549A5E35A3FBAD38203 /* Sources */,
-				AA9725DD1CFD930DB253992C241E686F /* Frameworks */,
-				5C8F1D8686D069D434A94654C22535A0 /* Headers */,
+				8121175C9006B4D1CE6500E9C137F840 /* Sources */,
+				9B939A35B4C2081C5D761947AC96034A /* Frameworks */,
+				E410C53D207BC7DA3706ED91ED5B1D73 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2C575F65663FC69741DE533309CF5574 /* PBXTargetDependency */,
-				3667EE0AC43F60BDB0CBB70CDF822218 /* PBXTargetDependency */,
+				1E96877E9635EC4312A7B5BD6C9C8D44 /* PBXTargetDependency */,
+			);
+			name = "NorthLayout-macOS";
+			productName = "NorthLayout-macOS";
+			productReference = 5FB56D8F429A207FEED79CE566AC2E0F /* NorthLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64D3E34B04F1A0CB5682E882C09067D2 /* NorthLayout-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05CFCA5EB85DE162C1C3E2E9A05D2074 /* Build configuration list for PBXNativeTarget "NorthLayout-iOS" */;
+			buildPhases = (
+				5BFA2E8D2FA19123FEB18EBDC63CC0DB /* Sources */,
+				9DB43622543336FA61B24FDFEB077682 /* Frameworks */,
+				EE3FC26E4A17EBE55756C2DD2107F65E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0014EA150DFC092B8EB265732EBBFA90 /* PBXTargetDependency */,
+			);
+			name = "NorthLayout-iOS";
+			productName = "NorthLayout-iOS";
+			productReference = 1F4595CDFB817CC8DB7AE16E31D8A531 /* NorthLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97B7331A87431BC48758916D49FC72C4 /* Pods-App-HeartVoice(macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E9D881B66131C40081703EB446D0AF2 /* Build configuration list for PBXNativeTarget "Pods-App-HeartVoice(macOS)" */;
+			buildPhases = (
+				9A0AFCCA196900335D76DD81F00B5F9C /* Sources */,
+				6DAAA99503E3C0B12FD5213D9A321E50 /* Frameworks */,
+				25C8743809499E6BC28AA22D8B8CD1F4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AA0940756FF5F99A72D1C703709A840 /* PBXTargetDependency */,
+				BFF707356988F13404A0E501A417605F /* PBXTargetDependency */,
+			);
+			name = "Pods-App-HeartVoice(macOS)";
+			productName = "Pods-App-HeartVoice(macOS)";
+			productReference = A1466DC857DEC68BB5950A237FBC1F42 /* Pods_App_HeartVoice_macOS_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3736DA8649EF7D8383DDB029E3B9374 /* Pods-App-HeartVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF5613848B36BBDF26D2F8408DABF51 /* Build configuration list for PBXNativeTarget "Pods-App-HeartVoice" */;
+			buildPhases = (
+				D97ABA38C6A63989009DC5757CBC0C9B /* Sources */,
+				A98B464D71C7AF651B29356800B12708 /* Frameworks */,
+				23D7348772F6031A90DED13B74E4621C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8BD83591D2101E8F1B6ED7C1BA1A78D /* PBXTargetDependency */,
+				274FFC29AE7B275361DF38EC6F6C0497 /* PBXTargetDependency */,
 			);
 			name = "Pods-App-HeartVoice";
 			productName = "Pods-App-HeartVoice";
-			productReference = DFA37416CD637B9832EB6FE17B68324F /* Pods_App_HeartVoice.framework */;
+			productReference = 6DD03E049A7522628BE86D13541599DD /* Pods_App_HeartVoice.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D671F5CDBECD38A7172F35C27C579D8A /* NorthLayout */ = {
+		F8A5717BE0BFB15B81A6C5FFE3E437EA /* FootlessParser-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21695385F63F1D7233E644524C73CB1B /* Build configuration list for PBXNativeTarget "NorthLayout" */;
+			buildConfigurationList = 3A7760F9730A4BB6687F59E0171FA58D /* Build configuration list for PBXNativeTarget "FootlessParser-macOS" */;
 			buildPhases = (
-				1551C17EB47542D8EA17A2397E6CA96B /* Sources */,
-				4C87739B5CBEC2FD3BD5AFE1B8EBB48A /* Frameworks */,
-				852B996404F126BFDE4E2A4F0B9AC0FA /* Headers */,
+				D783E6937F69BC7C31F3B29B0321A867 /* Sources */,
+				94B2E58CCB0C202B486BBD035581F2C2 /* Frameworks */,
+				B2FAFC9FD1DC7D51A26AC868FA21D3B6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				214911D266803434EABB3C6A62AAE40D /* PBXTargetDependency */,
 			);
-			name = NorthLayout;
-			productName = NorthLayout;
-			productReference = 3C7D8083DAD88CBE0C55E02E1D257D91 /* NorthLayout.framework */;
+			name = "FootlessParser-macOS";
+			productName = "FootlessParser-macOS";
+			productReference = C4667A1DFA5D5629B63CED6489D31C2E /* FootlessParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -366,134 +583,134 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DC7B3C0ACBCEC2475BD05526384DFB15 /* Products */;
+			productRefGroup = 6640DF890A5D08CC57B004F027F06B64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09E6DA3EA133A7B74401F8E518EDE86A /* FootlessParser */,
-				D671F5CDBECD38A7172F35C27C579D8A /* NorthLayout */,
-				45B13F159D6AF790B4EAD4C7BE7399A0 /* Pods-App-HeartVoice */,
+				1A49F350524078ED44455C4719A62D46 /* FootlessParser-iOS */,
+				F8A5717BE0BFB15B81A6C5FFE3E437EA /* FootlessParser-macOS */,
+				64D3E34B04F1A0CB5682E882C09067D2 /* NorthLayout-iOS */,
+				575F857CDA776CB680E437286FEA826F /* NorthLayout-macOS */,
+				A3736DA8649EF7D8383DDB029E3B9374 /* Pods-App-HeartVoice */,
+				97B7331A87431BC48758916D49FC72C4 /* Pods-App-HeartVoice(macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1551C17EB47542D8EA17A2397E6CA96B /* Sources */ = {
+		5BFA2E8D2FA19123FEB18EBDC63CC0DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0CF6C7339E2A9BEEBED00DA0F1A1EBE /* NorthLayout-dummy.m in Sources */,
-				E98A2DDEA8E3192B2CAEA3B7E9324D35 /* NorthLayout.swift in Sources */,
-				3BEB48ED8E5E59120E403630045133AE /* VFL.swift in Sources */,
-				3C824AAD47DD1B4E9653FBB883288578 /* VFLSyntax.swift in Sources */,
+				5BB45C0EFC1921AF8E56A1B88F50DA31 /* NorthLayout-iOS-dummy.m in Sources */,
+				137EAFA6DB5DF9F9BE78DC6B062A5ABE /* NorthLayout.swift in Sources */,
+				F3F412B7B0F3233DB8A07E2470635D2B /* VFL.swift in Sources */,
+				950D7C7ACEDBAE69DB569A28452008F8 /* VFLSyntax.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		574492B1DF7F3549A5E35A3FBAD38203 /* Sources */ = {
+		5F2CB222D8847B1B41D0F6E031529EE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA6250F4B96F008ED78F5D6F4BCC0997 /* Pods-App-HeartVoice-dummy.m in Sources */,
+				EE85F0F2BF3B69608A75833E416E9FD7 /* Converters.swift in Sources */,
+				094BF40F13C8407F0E15F30B3AC7FB39 /* Error.swift in Sources */,
+				C5F3AD36B205E01A17D5B281F32E23BE /* Extensions.swift in Sources */,
+				1716DBEB914F21C2A5415C309DAB246A /* FootlessParser-iOS-dummy.m in Sources */,
+				54E51B38ECAC437342F2A3E28AC928C4 /* Parser+Operators.swift in Sources */,
+				9D0E627E14E07A7279DDF79126E688B8 /* Parser.swift in Sources */,
+				15E331A282216BADB3BF3C1A0DAEE65F /* Parsers.swift in Sources */,
+				B240D07865BE06BFA38062347629176C /* StringParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83DAB898263A475C5372824052DEAFE7 /* Sources */ = {
+		8121175C9006B4D1CE6500E9C137F840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61F14FEA460569404901468E0040F53 /* Converters.swift in Sources */,
-				218C563C127CA329C51D30F1504B34B8 /* Error.swift in Sources */,
-				D38A0B8117A934F8D7F617C7F2B9BA06 /* Extensions.swift in Sources */,
-				84F742B9A656D57C804ED429BAB3CD1A /* FootlessParser-dummy.m in Sources */,
-				F0CF770305C89D07CD455A17B9AA2798 /* Parser+Operators.swift in Sources */,
-				71015FA498F02B91065BA59B160FAA82 /* Parser.swift in Sources */,
-				5679B7449F93DFFAB88F3E56E02E8A4A /* Parsers.swift in Sources */,
-				8650589654010D4EDDFD7441180A8B38 /* StringParser.swift in Sources */,
+				FD14A319E837F41C17CFC760C8D1FC8F /* NorthLayout-macOS-dummy.m in Sources */,
+				1992DB185B3DB75CF4FEDC5F0F9944D6 /* NorthLayout.swift in Sources */,
+				664642AF8A00D4D475233CE958978DCB /* VFL.swift in Sources */,
+				9FC40996DFBF094BF3E173B33CC35A72 /* VFLSyntax.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A0AFCCA196900335D76DD81F00B5F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C31F9D815B78106D637AFBC8BF3B129 /* Pods-App-HeartVoice(macOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D783E6937F69BC7C31F3B29B0321A867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76E47D9D33CDFC2B81AC90C15839569 /* Converters.swift in Sources */,
+				BB47CB0677AE6606BCB6E819D73A0830 /* Error.swift in Sources */,
+				86639BBE302E46A6782B79D14191A0A8 /* Extensions.swift in Sources */,
+				A4D366359B7DE1B1813BF7B88A78F3AB /* FootlessParser-macOS-dummy.m in Sources */,
+				9DB95685DD857F1E38C67600F64F13E4 /* Parser+Operators.swift in Sources */,
+				7EDC7B07EC1CA964F312C35A6A5706F3 /* Parser.swift in Sources */,
+				C5B204B643A9230DB8239EFCB56A124D /* Parsers.swift in Sources */,
+				9A6076C9162286DF86C33062369C24AC /* StringParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97ABA38C6A63989009DC5757CBC0C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76DBE0B2F4A1DF6E670AD6ECBB7B09CE /* Pods-App-HeartVoice-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		214911D266803434EABB3C6A62AAE40D /* PBXTargetDependency */ = {
+		0014EA150DFC092B8EB265732EBBFA90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FootlessParser;
-			target = 09E6DA3EA133A7B74401F8E518EDE86A /* FootlessParser */;
-			targetProxy = 651B2196866C7A2EFFF54F5654DCBCFF /* PBXContainerItemProxy */;
+			name = "FootlessParser-iOS";
+			target = 1A49F350524078ED44455C4719A62D46 /* FootlessParser-iOS */;
+			targetProxy = B4D1C29E88A575685BA57A89B3704D0D /* PBXContainerItemProxy */;
 		};
-		2C575F65663FC69741DE533309CF5574 /* PBXTargetDependency */ = {
+		1E96877E9635EC4312A7B5BD6C9C8D44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FootlessParser;
-			target = 09E6DA3EA133A7B74401F8E518EDE86A /* FootlessParser */;
-			targetProxy = A380881844C74C0C0DBABC1AACF653E0 /* PBXContainerItemProxy */;
+			name = "FootlessParser-macOS";
+			target = F8A5717BE0BFB15B81A6C5FFE3E437EA /* FootlessParser-macOS */;
+			targetProxy = 13FDCD786A37883DE0B9D2B859279B6B /* PBXContainerItemProxy */;
 		};
-		3667EE0AC43F60BDB0CBB70CDF822218 /* PBXTargetDependency */ = {
+		274FFC29AE7B275361DF38EC6F6C0497 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = NorthLayout;
-			target = D671F5CDBECD38A7172F35C27C579D8A /* NorthLayout */;
-			targetProxy = 9B9662BE3926BE9342079BC3801A38DF /* PBXContainerItemProxy */;
+			name = "NorthLayout-iOS";
+			target = 64D3E34B04F1A0CB5682E882C09067D2 /* NorthLayout-iOS */;
+			targetProxy = 86883E84066544A02ADF9B40E9B8A826 /* PBXContainerItemProxy */;
+		};
+		6AA0940756FF5F99A72D1C703709A840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FootlessParser-macOS";
+			target = F8A5717BE0BFB15B81A6C5FFE3E437EA /* FootlessParser-macOS */;
+			targetProxy = 55D524B0E3F702B4DEB6D2C0D3008A48 /* PBXContainerItemProxy */;
+		};
+		BFF707356988F13404A0E501A417605F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NorthLayout-macOS";
+			target = 575F857CDA776CB680E437286FEA826F /* NorthLayout-macOS */;
+			targetProxy = A937783EC52901A548F84BF6ED8DD7EE /* PBXContainerItemProxy */;
+		};
+		F8BD83591D2101E8F1B6ED7C1BA1A78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FootlessParser-iOS";
+			target = 1A49F350524078ED44455C4719A62D46 /* FootlessParser-iOS */;
+			targetProxy = 0F2E6F1D7534DF2DDBD7CDF0AF1041D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+		04F8D6700E4FB16727B4099798679C02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		282B7076DC1914BDAA4A7DA17F67E4BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3194AD993A87C3B3471EDBDC8B4EFB67 /* FootlessParser.xcconfig */;
+			baseConfigurationReference = 4AA325B52E38134616EC374F6CC35D1B /* NorthLayout-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -504,26 +721,221 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FootlessParser/FootlessParser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FootlessParser/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NorthLayout-iOS/NorthLayout-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NorthLayout-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FootlessParser/FootlessParser.modulemap";
-				PRODUCT_NAME = FootlessParser;
+				MODULEMAP_FILE = "Target Support Files/NorthLayout-iOS/NorthLayout-iOS.modulemap";
+				PRODUCT_NAME = NorthLayout;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1184B80154B7487070A9BA092CE5C1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03B52CBE34E83D95E9B4785F104A80C /* NorthLayout-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/NorthLayout-macOS/NorthLayout-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NorthLayout-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/NorthLayout-macOS/NorthLayout-macOS.modulemap";
+				PRODUCT_NAME = NorthLayout;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+		220EB50FFB801AEC149C292F5C1CBBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB32CB10D5386EEEAD3CE356B75EA14 /* Pods-App-HeartVoice(macOS).release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-App-HeartVoice(macOS)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_App_HeartVoice_macOS_;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40A64ECCE4AD08F58FE637D7B9ECB74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 517CB37470420562E5C43B79ECD53599 /* FootlessParser-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FootlessParser-iOS/FootlessParser-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FootlessParser-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FootlessParser-iOS/FootlessParser-iOS.modulemap";
+				PRODUCT_NAME = FootlessParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421C5F8E44847B10B25D593201540240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6F9CF97E3ED55F5FF2F8917D3A832F /* Pods-App-HeartVoice(macOS).debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-App-HeartVoice(macOS)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_App_HeartVoice_macOS_;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56B79752E48959E5FBE5E844933E6F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BAF2800E9F5B8D0E10E0A73640C809 /* FootlessParser-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FootlessParser-macOS/FootlessParser-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FootlessParser-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/FootlessParser-macOS/FootlessParser-macOS.modulemap";
+				PRODUCT_NAME = FootlessParser;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77BF1A85D3A7A417F932FE48C8DF043D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BAF2800E9F5B8D0E10E0A73640C809 /* FootlessParser-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FootlessParser-macOS/FootlessParser-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FootlessParser-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/FootlessParser-macOS/FootlessParser-macOS.modulemap";
+				PRODUCT_NAME = FootlessParser;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		817E25744DFABD643818B3DF90FBCCAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -573,6 +985,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,9 +996,9 @@
 			};
 			name = Debug;
 		};
-		88431C7B1FD81E92E2ED3EA1F859BEEA /* Debug */ = {
+		B91470AEEE4C8A374F257A3778B2D826 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3194AD993A87C3B3471EDBDC8B4EFB67 /* FootlessParser.xcconfig */;
+			baseConfigurationReference = 517CB37470420562E5C43B79ECD53599 /* FootlessParser-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -596,78 +1009,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FootlessParser/FootlessParser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FootlessParser/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FootlessParser-iOS/FootlessParser-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FootlessParser-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FootlessParser/FootlessParser.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FootlessParser-iOS/FootlessParser-iOS.modulemap";
 				PRODUCT_NAME = FootlessParser;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0C627C30CFEA6360AE638564B62FE97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B81C8373420B06C449624051AEDA829 /* NorthLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NorthLayout/NorthLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NorthLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NorthLayout/NorthLayout.modulemap";
-				PRODUCT_NAME = NorthLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D911F7763E6F5C2DA931BC1B1EDF2685 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B81C8373420B06C449624051AEDA829 /* NorthLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NorthLayout/NorthLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NorthLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NorthLayout/NorthLayout.modulemap";
-				PRODUCT_NAME = NorthLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -677,43 +1028,9 @@
 			};
 			name = Release;
 		};
-		F68248D7B29B01D068889AC86B68FC7D /* Release */ = {
+		BDA86F4F801AD50922732082DBC60CB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 222C9A3DB1F1C43C0162C5EDC4BEC29D /* Pods-App-HeartVoice.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-App-HeartVoice/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_App_HeartVoice;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FC51336BD48CF20973804CC276B53F33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4466B26C7319EF032DC74B0BFBF15E31 /* Pods-App-HeartVoice.debug.xcconfig */;
+			baseConfigurationReference = D5F644A63FA3C6A80C698D047B86044A /* Pods-App-HeartVoice.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -745,14 +1062,177 @@
 			};
 			name = Debug;
 		};
+		C84E437E58176B160E971C774FC17052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03B52CBE34E83D95E9B4785F104A80C /* NorthLayout-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/NorthLayout-macOS/NorthLayout-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NorthLayout-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/NorthLayout-macOS/NorthLayout-macOS.modulemap";
+				PRODUCT_NAME = NorthLayout;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D76308DF8474C951437CAA28838C730C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA325B52E38134616EC374F6CC35D1B /* NorthLayout-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NorthLayout-iOS/NorthLayout-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NorthLayout-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NorthLayout-iOS/NorthLayout-iOS.modulemap";
+				PRODUCT_NAME = NorthLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF307F29780027811F19105CDF7AFDF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FC14E0DAEFBC04F6B2B3AD12C39F8E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93C55EA6AC7CA68AC3EA7E58CCAF94C /* Pods-App-HeartVoice.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-App-HeartVoice/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_App_HeartVoice;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21695385F63F1D7233E644524C73CB1B /* Build configuration list for PBXNativeTarget "NorthLayout" */ = {
+		05CFCA5EB85DE162C1C3E2E9A05D2074 /* Build configuration list for PBXNativeTarget "NorthLayout-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0C627C30CFEA6360AE638564B62FE97 /* Debug */,
-				D911F7763E6F5C2DA931BC1B1EDF2685 /* Release */,
+				04F8D6700E4FB16727B4099798679C02 /* Debug */,
+				D76308DF8474C951437CAA28838C730C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E9D881B66131C40081703EB446D0AF2 /* Build configuration list for PBXNativeTarget "Pods-App-HeartVoice(macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C5F8E44847B10B25D593201540240 /* Debug */,
+				220EB50FFB801AEC149C292F5C1CBBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -760,26 +1240,44 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
-				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+				817E25744DFABD643818B3DF90FBCCAA /* Debug */,
+				EF307F29780027811F19105CDF7AFDF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88A7646A107A0C68D3519EF607EC4B92 /* Build configuration list for PBXNativeTarget "FootlessParser" */ = {
+		3A7760F9730A4BB6687F59E0171FA58D /* Build configuration list for PBXNativeTarget "FootlessParser-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88431C7B1FD81E92E2ED3EA1F859BEEA /* Debug */,
-				282B7076DC1914BDAA4A7DA17F67E4BA /* Release */,
+				56B79752E48959E5FBE5E844933E6F8B /* Debug */,
+				77BF1A85D3A7A417F932FE48C8DF043D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DED9AA8B26F59636BCF09891E088AAA3 /* Build configuration list for PBXNativeTarget "Pods-App-HeartVoice" */ = {
+		8ACAB8B61B97C759DFB58A6788787C09 /* Build configuration list for PBXNativeTarget "FootlessParser-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC51336BD48CF20973804CC276B53F33 /* Debug */,
-				F68248D7B29B01D068889AC86B68FC7D /* Release */,
+				40A64ECCE4AD08F58FE637D7B9ECB74E /* Debug */,
+				B91470AEEE4C8A374F257A3778B2D826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF5613848B36BBDF26D2F8408DABF51 /* Build configuration list for PBXNativeTarget "Pods-App-HeartVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA86F4F801AD50922732082DBC60CB5 /* Debug */,
+				FC14E0DAEFBC04F6B2B3AD12C39F8E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB148D0A3813A193C11F5097433DB14 /* Build configuration list for PBXNativeTarget "NorthLayout-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84E437E58176B160E971C774FC17052 /* Debug */,
+				1184B80154B7487070A9BA092CE5C1F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
