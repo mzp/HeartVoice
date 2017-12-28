@@ -59,6 +59,6 @@ class ViewController: UITableViewController {
             return
         }
         let vc = ClientViewController(client: HeartVoiceServiceClient(session: session, server: server))
-        present(vc, animated: true) {}
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
