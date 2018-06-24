@@ -15,13 +15,16 @@ class HeartVoiceServiceServer: NSObject {
     private let sessions: MutableProperty<[MCSession]> = MutableProperty([])
     private let advertiser: MCNearbyServiceAdvertiser
     private let mutableActivity: MutableProperty<HeartActivity>
+    private let mutableDokiDokiActivity: MutableProperty<DokiDokiActivity?> = .init(nil)
 
     let peers: Property<[[MCPeerID]]>
     let activty: Property<HeartActivity>
+    let dokiDokiActivity: Property<DokiDokiActivity?>
 
     init(name: String) {
         mutableActivity = MutableProperty(HeartActivity(0))
         activty = Property(mutableActivity)
+        dokiDokiActivity = Property(mutableDokiDokiActivity)
         myPeerID = MCPeerID(displayName: HeartVoiceService.serverPrefix + name)
         advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil,
                                                serviceType: HeartVoiceService.serviceType)
@@ -53,11 +56,17 @@ extension HeartVoiceServiceServer: MCSessionDelegate {
     }
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        guard let activity = try? JSONDecoder().decode(HeartActivity.self, from: data) else {
+        if let activity = try? JSONDecoder().decode(HeartActivity.self, from: data) {
+            NSLog("\(activity)")
+            mutableActivity.value = activity
             return
         }
-        NSLog("\(activity)")
-        mutableActivity.swap(activity)
+
+        if let activity = try? JSONDecoder().decode(DokiDokiActivity.self, from: data) {
+            // NSLog("\(activity)")
+            mutableDokiDokiActivity.value = activity
+            return
+        }
     }
 
     func session(_ session: MCSession, didReceive stream: InputStream,

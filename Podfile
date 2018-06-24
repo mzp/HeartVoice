@@ -2,12 +2,14 @@ use_frameworks!
 
 abstract_target 'App' do
   pod 'SwiftLint'
+  pod '※ikemen'
 
   target 'HeartVoice' do
     platform :ios, '11.0'
     pod 'NorthLayout', '~> 5'
     pod 'ReactiveCocoa'
     pod 'ReactiveSwift'
+    pod 'BrightFutures'
   end
 
   target 'HeartVoice(macOS)' do
