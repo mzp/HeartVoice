@@ -13,9 +13,8 @@ import ReactiveCocoa
 
 class ViewController: NSViewController {
     let button = NSButton()
-    let heartrate = NSTextField()
     var server: HeartVoiceServiceServer?
-    let graph = DokiDokiGraph()
+    let contentView = MainView()
 
     override func loadView() {
         view = NSView()
@@ -28,30 +27,21 @@ class ViewController: NSViewController {
         button.target = self
         button.action = #selector(becomeAServer(_:))
 
-        heartrate.isEditable = false
-        heartrate.stringValue = "--"
-        heartrate.isBordered = false
-        heartrate.drawsBackground = false
-        heartrate.font = NSFont.systemFont(ofSize: 42.0)
-        heartrate.textColor = NSColor.white
-
         let autolayout = view.northLayoutFormat(["p": 20], [
             "server": button,
-            "heartrate": heartrate,
-            "graph": graph])
+            "content": contentView])
         autolayout("H:|-p-[server]-p-|")
-        autolayout("H:|-p-[heartrate]-p-|")
-        autolayout("H:|-p-[graph]-p-|")
-        autolayout("V:|-p-[heartrate]-p-[graph(==128)]-p-[server]-p-|")
+        autolayout("H:|-p-[content]-p-|")
+        autolayout("V:|-p-[content(>=128)]-p-[server]-p-|")
     }
 
     @objc private func becomeAServer(_ sender: AnyObject?) {
         server = HeartVoiceServiceServer(name: ProcessInfo().hostName)
         server?.activty.signal.observe(on: QueueScheduler.main).observeValues { activity in
-            self.heartrate.stringValue = "♥\(activity.heartrate)"
+            self.contentView.currentHeartRateView.heartrate = activity.heartrate
         }
         server?.dokiDokiActivity.signal.observe(on: QueueScheduler.main).observeValues { activity in
-            self.graph.activity = activity
+            self.contentView.activity = activity
         }
         server?.peers.signal.observe(on: QueueScheduler.main).observeValues { peers in
             if self.server != nil {

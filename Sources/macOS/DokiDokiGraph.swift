@@ -10,24 +10,16 @@ final class DokiDokiGraph: NSView {
         didSet {reloadTimeOffset()}
     }
 
-    let titleLabel = AutolayoutLabel() ※ {
-        $0.isBordered = false
-        $0.drawsBackground = false
-    }
-
     let timeBar = NSView() ※ {
         $0.wantsLayer = true
-        $0.layer?.backgroundColor = .white
+        $0.layer?.backgroundColor = NSColor.magenta.cgColor
     }
 
     init() {
         super.init(frame: .zero)
-        let autolayout = northLayoutFormat([:], [
-            "title": titleLabel,
-            "time": timeBar])
-        autolayout("H:|-[title]-|")
-        autolayout("H:[time(==2)]")
-        autolayout("V:|-[title]-[time]|")
+        let autolayout = northLayoutFormat([:], ["time": timeBar])
+        autolayout("H:[time(==1)]")
+        autolayout("V:|[time]|")
 
         reloadActivity()
         reloadTimeOffset()
@@ -35,7 +27,6 @@ final class DokiDokiGraph: NSView {
     required init?(coder decoder: NSCoder) {fatalError()}
 
     func reloadActivity() {
-        titleLabel.stringValue = activity?.title ?? ""
         timeBar.isHidden = (activity == nil)
         needsDisplay = true
     }
@@ -54,12 +45,12 @@ final class DokiDokiGraph: NSView {
         let duration = last.time.timeIntervalSince(activity.start)
         let max: CGFloat = 215
 
-        NSColor.gray.setFill()
+        NSColor.white.withAlphaComponent(0.7).setFill()
         activity.heartbeats.forEach { beat in
             let offset = beat.time.timeIntervalSince(activity.start)
             let x = CGFloat(offset / duration) * bounds.width // swiftlint:disable:this identifier_name
             let height = (CGFloat(beat.heartrate) / max) * timeBar.frame.height
-            NSRect(x: x, y: timeBar.frame.minY, width: 1, height: height).fill(using: .sourceOver)
+            NSRect(x: x, y: timeBar.frame.minY, width: 2, height: height).fill(using: .copy)
         }
     }
 }
