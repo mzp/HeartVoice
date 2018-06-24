@@ -14,6 +14,7 @@ final class MainView: NSView {
         get {return graphView.timeOffset}
         set {
             graphView.timeOffset = newValue
+            // NSLog("%@", "timeOffset = \(newValue)")
 
             guard let activity = activity else { return }
             replayHeartRateView.heartrate = activity.heartbeats.min {

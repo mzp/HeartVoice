@@ -10,11 +10,13 @@ import Cocoa
 import NorthLayout
 import ReactiveSwift
 import ReactiveCocoa
+import YesBDTime
 
 class ViewController: NSViewController {
     let button = NSButton()
     var server: HeartVoiceServiceServer?
     let contentView = MainView()
+    let ybt = YesBDTime()
 
     override func loadView() {
         view = NSView()
@@ -42,6 +44,9 @@ class ViewController: NSViewController {
         }
         server?.dokiDokiActivity.signal.observe(on: QueueScheduler.main).observeValues { activity in
             self.contentView.activity = activity
+            
+            self.ybt.callback = {[weak self] in self?.contentView.timeOffset = $0}
+            self.ybt.capture(repeatedlyWith: 1)
         }
         server?.peers.signal.observe(on: QueueScheduler.main).observeValues { peers in
             if self.server != nil {

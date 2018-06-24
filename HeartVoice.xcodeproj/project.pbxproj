@@ -434,7 +434,6 @@
 				1332A7421FF3885500470CD7 /* Resources */,
 				13810DAE1FF38DB700EB1119 /* Embed Watch Content */,
 				DFE8E85FFFA0B619696BF3A0 /* [CP] Embed Pods Frameworks */,
-				D5E3F79DE03BF5E0854EAC4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -492,7 +491,6 @@
 				13810D921FF38DB700EB1119 /* Frameworks */,
 				13810D931FF38DB700EB1119 /* Resources */,
 				3B7C4AFA208B62D5F606CA3B /* [CP] Embed Pods Frameworks */,
-				D09C96ADF14B54F5E53B3EED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -513,7 +511,6 @@
 				13810DD41FF38F2700EB1119 /* Frameworks */,
 				13810DD51FF38F2700EB1119 /* Resources */,
 				5610B52D3CB861B0D4775378 /* [CP] Embed Pods Frameworks */,
-				7704ECE50FB05081F7FD01B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -760,6 +757,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-macOS/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/※ikemen-macOS/Ikemen.framework",
+				"${BUILT_PRODUCTS_DIR}/YesBDTime/YesBDTime.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -769,6 +767,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ikemen.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YesBDTime.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -793,21 +792,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7704ECE50FB05081F7FD01B5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS)-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		84F3E6876121E37B288D1309 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,36 +808,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D09C96ADF14B54F5E53B3EED /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5E3F79DE03BF5E0854EAC4E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFE8E85FFFA0B619696BF3A0 /* [CP] Embed Pods Frameworks */ = {
