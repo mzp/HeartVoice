@@ -107,6 +107,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa-macOS/ReactiveCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveSwift-macOS/ReactiveSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-macOS/Ikemen.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-macOS/FootlessParser.framework"
@@ -114,6 +115,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa-macOS/ReactiveCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveSwift-macOS/ReactiveSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-macOS/Ikemen.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

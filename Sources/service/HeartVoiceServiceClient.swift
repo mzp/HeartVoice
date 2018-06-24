@@ -20,8 +20,16 @@ class HeartVoiceServiceClient: NSObject {
     }
 
     func send(activity: HeartActivity) {
+        send(encodable: activity)
+    }
+
+    func send(activity: DokiDokiActivity) {
+        send(encodable: activity)
+    }
+
+    func send<T: Encodable>(encodable: T) {
         do {
-            guard let data = try? JSONEncoder().encode(activity) else {
+            guard let data = try? JSONEncoder().encode(encodable) else {
                 return
             }
             try session.send(data, toPeers: [server], with: .reliable)

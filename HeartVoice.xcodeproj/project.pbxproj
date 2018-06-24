@@ -46,6 +46,8 @@
 		5245168997D0C782675117CD /* Pods_App_HeartVoiceWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203BE4E3AF2B053E5F217C54 /* Pods_App_HeartVoiceWatch_Extension.framework */; };
 		53AAEF47F0F946851F63C3DE /* Pods_App_HeartVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */; };
 		D0F212ED0B62BDF8F0E0DDA4 /* Pods_App_HeartVoice_macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */; };
+		EA1743CF20DFA125005EF014 /* DokiDokiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */; };
+		EA1743D020DFA125005EF014 /* DokiDokiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +158,7 @@
 		A908083E52001D6F1B526F75 /* Pods_App_HeartVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_HeartVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
 		C4D5B621B97D61A883D94105 /* Pods-App-HeartVoiceWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoiceWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DokiDokiActivity.swift; sourceTree = "<group>"; };
 		FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice(macOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -375,6 +378,7 @@
 			children = (
 				13F668431FF3BB4A0078C0F3 /* HeartActivity.swift */,
 				13F668461FF3BBC10078C0F3 /* WatchSession.swift */,
+				EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */,
 			);
 			path = communication;
 			sourceTree = "<group>";
@@ -718,11 +722,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-watchOS/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-watchOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/※ikemen-watchOS/Ikemen.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ikemen.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -741,6 +747,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa-macOS/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-macOS/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-macOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/※ikemen-macOS/Ikemen.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -749,6 +756,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ikemen.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -843,19 +851,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
 				"${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework",
 				"${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa-iOS/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FootlessParser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorthLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ikemen.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -875,6 +887,7 @@
 				139E5ADB1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */,
 				1332A74A1FF3885500470CD7 /* ViewController.swift in Sources */,
 				139E5AE01FF498810016F066 /* ClientViewController.swift in Sources */,
+				EA1743CF20DFA125005EF014 /* DokiDokiActivity.swift in Sources */,
 				139E5AD71FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */,
 				1332A7481FF3885500470CD7 /* AppDelegate.swift in Sources */,
 				13F668441FF3BB4A0078C0F3 /* HeartActivity.swift in Sources */,
@@ -911,6 +924,7 @@
 				139E5AE11FF49B4A0016F066 /* HeartActivity.swift in Sources */,
 				139E5AD81FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */,
 				139E5ADA1FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */,
+				EA1743D020DFA125005EF014 /* DokiDokiActivity.swift in Sources */,
 				13810DDC1FF38F2700EB1119 /* ViewController.swift in Sources */,
 				139E5ADC1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */,
 				13810DDA1FF38F2700EB1119 /* AppDelegate.swift in Sources */,

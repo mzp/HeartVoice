@@ -102,18 +102,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa-iOS/ReactiveCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS/ReactiveSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa-iOS/ReactiveCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS/ReactiveSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
