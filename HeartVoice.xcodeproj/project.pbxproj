@@ -48,6 +48,8 @@
 		D0F212ED0B62BDF8F0E0DDA4 /* Pods_App_HeartVoice_macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A39F23355AFFC5EA1963703 /* Pods_App_HeartVoice_macOS_.framework */; };
 		EA1743CF20DFA125005EF014 /* DokiDokiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */; };
 		EA1743D020DFA125005EF014 /* DokiDokiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */; };
+		EA6B892A20DFAF6B005CB3E1 /* DokiDokiGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B892920DFAF6B005CB3E1 /* DokiDokiGraph.swift */; };
+		EA6B892C20DFB142005CB3E1 /* AutolayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B892B20DFB141005CB3E1 /* AutolayoutLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,8 @@
 		B4FEDC497D18AE07963F47A8 /* Pods-App-HeartVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice/Pods-App-HeartVoice.release.xcconfig"; sourceTree = "<group>"; };
 		C4D5B621B97D61A883D94105 /* Pods-App-HeartVoiceWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoiceWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoiceWatch Extension/Pods-App-HeartVoiceWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		EA1743CE20DFA125005EF014 /* DokiDokiActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DokiDokiActivity.swift; sourceTree = "<group>"; };
+		EA6B892920DFAF6B005CB3E1 /* DokiDokiGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokiDokiGraph.swift; sourceTree = "<group>"; };
+		EA6B892B20DFB141005CB3E1 /* AutolayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutLabel.swift; sourceTree = "<group>"; };
 		FCD3DD4E779060F7B826EECF /* Pods-App-HeartVoice(macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HeartVoice(macOS).debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-HeartVoice(macOS)/Pods-App-HeartVoice(macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +222,8 @@
 			children = (
 				13810DD91FF38F2700EB1119 /* AppDelegate.swift */,
 				13810DDB1FF38F2700EB1119 /* ViewController.swift */,
+				EA6B892920DFAF6B005CB3E1 /* DokiDokiGraph.swift */,
+				EA6B892B20DFB141005CB3E1 /* AutolayoutLabel.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -925,8 +931,10 @@
 				139E5AD81FF494150016F066 /* HeartVoiceServiceServer.swift in Sources */,
 				139E5ADA1FF494150016F066 /* HeartVoiceServiceClient.swift in Sources */,
 				EA1743D020DFA125005EF014 /* DokiDokiActivity.swift in Sources */,
+				EA6B892C20DFB142005CB3E1 /* AutolayoutLabel.swift in Sources */,
 				13810DDC1FF38F2700EB1119 /* ViewController.swift in Sources */,
 				139E5ADC1FF494150016F066 /* HeartVoiceServiceBrowser.swift in Sources */,
+				EA6B892A20DFAF6B005CB3E1 /* DokiDokiGraph.swift in Sources */,
 				13810DDA1FF38F2700EB1119 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
