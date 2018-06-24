@@ -17,6 +17,7 @@ abstract_target 'App' do
     pod 'NorthLayout', '~> 5'
     pod 'ReactiveCocoa'
     pod 'ReactiveSwift'
+    pod 'YesBDTime', git: 'https://github.com/banjun/YesBDTime', tag: '0.1.0'
   end
 
   target 'HeartVoiceWatch Extension' do
