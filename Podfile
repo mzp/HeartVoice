@@ -17,6 +17,7 @@ abstract_target 'App' do
     pod 'NorthLayout', '~> 5'
     pod 'ReactiveCocoa'
     pod 'ReactiveSwift'
+    pod 'YesBDTime'
   end
 
   target 'HeartVoiceWatch Extension' do
