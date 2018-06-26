@@ -10,7 +10,7 @@ PODS:
     - Result (~> 3.2)
   - Result (3.2.4)
   - SwiftLint (0.24.0)
-  - YesBDTime (0.1.0)
+  - YesBDTime (0.2.0)
   - "※ikemen (0.5.0)"
 
 DEPENDENCIES:
@@ -19,7 +19,7 @@ DEPENDENCIES:
   - ReactiveCocoa
   - ReactiveSwift
   - SwiftLint
-  - YesBDTime (from `https://github.com/banjun/YesBDTime`, tag `0.1.0`)
+  - YesBDTime
   - "※ikemen"
 
 SPEC REPOS:
@@ -31,17 +31,8 @@ SPEC REPOS:
     - ReactiveSwift
     - Result
     - SwiftLint
+    - YesBDTime
     - "※ikemen"
-
-EXTERNAL SOURCES:
-  YesBDTime:
-    :git: https://github.com/banjun/YesBDTime
-    :tag: 0.1.0
-
-CHECKOUT OPTIONS:
-  YesBDTime:
-    :git: https://github.com/banjun/YesBDTime
-    :tag: 0.1.0
 
 SPEC CHECKSUMS:
   BrightFutures: 9c03dab79e73ffe504b7bafc15c5bfdaeee54890
@@ -51,9 +42,9 @@ SPEC CHECKSUMS:
   ReactiveSwift: d9fe0db33c1aaabecb092e8de83cf52875c0de6f
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
-  YesBDTime: 4f0ca38f92ce513145829fb137fe46c65953f717
+  YesBDTime: 1b9188a588b2f29391d355f376717d5583492c45
   "※ikemen": 0cf85af52790db21a846ad31abca356e99da1ffb
 
-PODFILE CHECKSUM: c32e60d87f66676f6e8be9c9796d9d356ec7e09e
+PODFILE CHECKSUM: df29a6a79d31d8cc5070e28b1db9918f275130f0
 
 COCOAPODS: 1.5.3
